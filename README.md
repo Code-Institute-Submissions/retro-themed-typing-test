@@ -16,14 +16,28 @@
   * Wireframes
 
   ## User Experience
-    ---
-    ### User Goals
-    ---
-    * The typing game and website to be responsive on as many possible devices such as Laptops, Tablets, Mobile Phones and PCs.
-    * The ability to chose the difficulty of the test for example easy only includes 4 letter words and hard includes longer words.
-    * A visual indication when a word is typed or misspelled that it was incorrect.
-    * To have a retro theme.
-    * A words per minute calculation after test and words per hour.
-    * To be able to change the text from retro to something easier to read for accessibility and readability.
-    * To have instructions to clearly indicate how to play the game.
-    * Have a clear indication that the test has started.
+  ---
+  ### User Goals
+  ---
+  * The typing game and website to be responsive on as many possible devices such as Laptops, Tablets, Mobile Phones and PCs.
+  * The ability to chose the difficulty of the test for example easy only includes 4 letter words and hard includes longer words.
+  * A visual indication when a word is typed or misspelled that it was incorrect.
+  * To have a retro theme.
+  * A words per minute calculation after test and words per hour.
+  * To be able to change the text from retro to something easier to read for accessibility and readability.
+  * To have instructions to clearly indicate how to play the game.
+  * Have a clear indication that the test has started.
+
+  ### User Stories
+  ---
+  * As the **user** I want clear feedback when the word was typed correctly and incorrectly.
+  * As the **user** I would like to be able to chose the difficult of the test.
+  * As the **user** be able to chose how long the test will last.
+  * As the **user** expect the word to be judged whether it is correct or not after each space bar press.
+  * As the **user** I would like the words to be easy to read.
+  * As the **user** I expect the website to work cross browser.
+  * As the **user** I expect the website to be responsive and work on more than just Desktop.
+  * As the **user** I would want to be able to restart the test in-case of a making a mistake.
+  * As the **user** I would like to be able to share my words per minute on Social media.
+  * As the **user** I would want to see a rule book/instructions.
+  * As the **user** I would maybe want to be able to change the font colour to make it easier to read for the colour blind.
