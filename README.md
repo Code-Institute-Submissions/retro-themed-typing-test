@@ -41,3 +41,10 @@
   * As the **user** I would like to be able to share my words per minute on Social media.
   * As the **user** I would want to see a rule book/instructions.
   * As the **user** I would maybe want to be able to change the font colour to make it easier to read for the colour blind.
+
+  ### Site Owners Goals
+  ---
+  * As the **Site owner** I want users to have fun, interaction and intuitive experience.
+  * As the **Site owner** I want users to be able to test there typing skills.
+  * As the **Site owner** I want it to be able to improve typing skills.
+  * As the **Site owner** I want the website to look appealing and eye capturing.
