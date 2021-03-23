@@ -48,3 +48,13 @@
   * As the **Site owner** I want users to be able to test there typing skills.
   * As the **Site owner** I want it to be able to improve typing skills.
   * As the **Site owner** I want the website to look appealing and eye capturing.
+
+  ### User Requirements and Expectations
+  ---
+  #### Requirements
+  * Clear way to start the typing test.
+  * Be responsive across different devices.
+  * To be able to contact and be connected in case of there being a bug found.
+  * To be able to change the difficulty of the test
+  * To be able to reset the test.
+  * To be able to share the results.
