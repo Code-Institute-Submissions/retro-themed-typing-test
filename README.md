@@ -58,3 +58,12 @@
   * To be able to change the difficulty of the test
   * To be able to reset the test.
   * To be able to share the results.
+
+  #### Expectations
+  * Clear indication of words typed correctly and incorrectly
+  * Expect it to work on all devices.
+  * Website to load quickly.
+  * Navigating and interacting to be easy.
+  * Reset button works
+  * Countdown timer to work correctly
+  * Game starts correctly
