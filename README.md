@@ -67,3 +67,8 @@
   * Reset button works
   * Countdown timer to work correctly
   * Game starts correctly
+
+  ### Design Choices and Thoughts
+  ---
+  #### Fonts
+  When deciding and choosing the font that I will use for the site I took the theme and idea I had in mind being retro and took inspiration from some font styles that was used in that 80s I have decided I will use a font which is an open source font called [Glass TTY VT](https://github.com/svofski/glasstty) I think this provides a retro theme and doesn't harm readability too much. If readability of text is an issue I plan to create a readability/accessibility switch so text can be transformed into an easier to read font.
