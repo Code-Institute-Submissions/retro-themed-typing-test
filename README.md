@@ -72,3 +72,7 @@
   ---
   #### Fonts
   When deciding and choosing the font that I will use for the site I took the theme and idea I had in mind being retro and took inspiration from some font styles that was used in that 80s I have decided I will use a font which is an open source font called [Glass TTY VT](https://github.com/svofski/glasstty) I think this provides a retro theme and doesn't harm readability too much. If readability of text is an issue I plan to create a readability/accessibility switch so text can be transformed into an easier to read font.
+
+  #### Colours
+  To decide and chose which colours would suit my project I decided to use some inspiration from New York in the 80s at night where there was lots of vibrant colours and glowing accents I will try to create this theme throughout the website. To replicate the night feeling the website background will be dark using #131517 with a hint of #5C0000. To replicate vibrant glowing effects I will use text shadows and box shadows for glowing text throughout the site I will use colour #FF8585 with text shadow of #FF4D4D and #FB0000. Here are my colour choices:
+  ![Retro Typing Game Colour Scheme](/wireframes/retro-typing-game-theme.png "Retro Typing Game Colours")
