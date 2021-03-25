@@ -76,3 +76,6 @@
   #### Colours
   To decide and chose which colours would suit my project I decided to use some inspiration from New York in the 80s at night where there was lots of vibrant colours and glowing accents I will try to create this theme throughout the website. To replicate the night feeling the website background will be dark using #131517 with a hint of #5C0000. To replicate vibrant glowing effects I will use text shadows and box shadows for glowing text throughout the site I will use colour #FF8585 with text shadow of #FF4D4D and #FB0000. Here are my colour choices:
   ![Retro Typing Game Colour Scheme](/wireframes/retro-typing-game-theme.png "Retro Typing Game Colours")
+
+  #### Page layout
+  For my project I think I will go with a condensed layout inside containers I will use [Bootstrap](www.bootstrap.com "Bootstrap responsive framework") and the grid system to make the website responsive across devices as-well as using the short hand flexbox classes [Bootstrap](www.bootstrap.com "Bootstrap responsive framework") offers.
