@@ -88,7 +88,7 @@
   * [Desktop Home Page](/wireframes/desktop-home-page.png "Desktop home page wireframe")
   * [Desktop Typing Game Before Test](/wireframes/desktop-typing-game.png "Desktop typing game wireframe")
   * [Desktop Counter](/wireframes/desktop-counter.png "Desktop counter before game starts")
-  * [Desktop Typing Game During Test](/wireframes/desktop-typing-gaming-during "Desktop typing game during wireframe")
+  * [Desktop Typing Game During Test](/wireframes/desktop-typing-gaming-during.png "Desktop typing game during wireframe")
   * [Desktop Typing Game After Test](/wireframes/desktop-typing-game-after.png "Desktop typing game after wireframe")
 
   Tablet Wireframes:
@@ -99,5 +99,5 @@
   Mobile Wireframes:
   * [Mobile Home Page](/wireframes/mobile-home.png "Mobile home page wireframe")
   * [Mobile Typing Game before](/wireframes/mobile-typing-game.png "Mobile typing game before wireframe")
-  * [Mobile Typing Game During](/wireframes/mobile-typing-game-during "Mobile typing game during wireframe")
+  * [Mobile Typing Game During](/wireframes/mobile-typing-game-during.png "Mobile typing game during wireframe")
   * [Mobile Typing Game Results](/wireframes/mobile-typing-game-results.png "Mobile typing game results wireframe")
