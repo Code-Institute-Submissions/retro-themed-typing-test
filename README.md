@@ -79,3 +79,25 @@
 
   #### Page layout
   For my project I think I will go with a condensed layout inside containers I will use [Bootstrap](www.bootstrap.com "Bootstrap responsive framework") and the grid system to make the website responsive across devices as-well as using the short hand flexbox classes [Bootstrap](www.bootstrap.com "Bootstrap responsive framework") offers.
+
+  ### Wireframes
+  ---
+  For building the Wireframes I have used [Balsamiq Wireframes](https://balsamiq.com/) as it allows for easy website Wireframes to be created and to show simply how I want the project to look on Desktop/Tablet and mobile.
+
+  Desktop Wireframes:
+  * [Desktop Home Page](/wireframes/desktop-home-page.png "Desktop home page wireframe")
+  * [Desktop Typing Game Before Test](/wireframes/desktop-typing-game.png "Desktop typing game wireframe")
+  * [Desktop Counter](/wireframes/desktop-counter.png "Desktop counter before game starts")
+  * [Desktop Typing Game During Test](/wireframes/desktop-typing-game-during.png "Desktop typing game during wireframe")
+  * [Desktop Typing Game After Test](/wireframes/desktop-typing-game-after.png "Desktop typing game after wireframe")
+
+  Tablet Wireframes:
+  * [Tablet Home Page](/wireframes/tablet-home.png "Tablet home page wireframe")
+  * [Tablet Typing Game](/wireframes/tablet-typing-game.png "Tablet typing game wireframe")
+  * [Tablet Home Page](/wireframes/tablet-typing-game-results.png "Tablet results wireframe")
+
+  Mobile Wireframes:
+  * [Mobile Home Page](/wireframes/mobile-home.png "Mobile home page wireframe")
+  * [Mobile Typing Game before](/wireframes/mobile-typing-game-before.png "Mobile typing game before wireframe")
+  * [Mobile Typing Game During](/wireframes/mobile-typing-Game-during.png "Mobile typing game during wireframe")
+  * [Mobile Typing Game Results](/wireframes/mobile-typing-game-results.png "Mobile typing game results wireframe")
