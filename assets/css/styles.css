@@ -35,5 +35,8 @@ body {
   background: var(--site-background-moz);
   background: var(--site-background-webkit);
   background: var(--site-background);
+}
 
+body, a, p, span {
+  color: var(--body-text-color);
 }
