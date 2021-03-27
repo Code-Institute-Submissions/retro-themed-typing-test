@@ -32,4 +32,7 @@
 
 body {
   font-family: var(--retro-font);
+  background: var(--site-background);
+  background: var(--site-background-moz);
+  background: var(--site-background-webkit);
 }
