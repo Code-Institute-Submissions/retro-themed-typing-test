@@ -15,9 +15,9 @@
 :root {
   --site-dark: #131517;
   --site-red: #5C0000;
-  --site-background: radial-gradient(ellipse at center, var(--site-dark) 70%, var(--site-dark) 100%);
-  --site-background-moz: -moz-radial-gradient(center, #131517 0%, #5C0000 100%);
-  --site-background-webkit: -webkit-radial-gradient(center, #131517 0%, #5C0000 100%);
+  --site-background: radial-gradient(ellipse at center, var(--site-dark) 70%, var(--site-red) 100%);
+  --site-background-moz: -moz-radial-gradient(center, var(--site-dark) 0%, var(--site-red) 100%);
+  --site-background-webkit: -webkit-radial-gradient(center, var(--site-dark) 0%, var(--site-red) 100%);
   --body-text-color: #EEFFEE;
   --neon-red-color-1: #ffb2b2;
   --neon-red-color-2: #ff4d4d;
@@ -32,7 +32,8 @@
 
 body {
   font-family: var(--retro-font);
-  background: var(--site-background);
   background: var(--site-background-moz);
   background: var(--site-background-webkit);
+  background: var(--site-background);
+
 }
