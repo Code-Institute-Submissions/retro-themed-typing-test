@@ -26,10 +26,6 @@
   --retro-font: Glass TTY VT220;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--retro-font);
   background: var(--site-background-moz);
