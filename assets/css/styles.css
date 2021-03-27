@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Glass TTY VT220';
+  src: url('fonts/Glass_TTY_VT220.eot');
+  src: url('fonts/Glass_TTY_VT220.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Glass_TTY_VT220.woff2') format('woff2'),
+    url('fonts/Glass_TTY_VT220.woff') format('woff'),
+    url('fonts/Glass_TTY_VT220.ttf') format('truetype'),
+    url('fonts/Glass_TTY_VT220.svg#Glass_TTY_VT220') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
