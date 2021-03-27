@@ -10,3 +10,18 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* CSS variables so we can make an accessbility/readability switch. */
+:root {
+  --site-dark: #131517;
+  --site-red: #5C0000;
+  --site-background: radial-gradient(ellipse at center, var(--site-dark) 70%, var(--site-dark) 100%);
+  --site-background-moz: -moz-radial-gradient(center, #131517 0%, #5C0000 100%);
+  --site-background-webkit: -webkit-radial-gradient(center, #131517 0%, #5C0000 100%);
+  --body-text-color: #EEFFEE;
+  --neon-red-color-1: #ffb2b2;
+  --neon-red-color-2: #ff4d4d;
+  --neon-red-color-3: #fb0000;
+  --neon-red-text-shadow: 0 0 3px var(--neon-red-color-1), 0 0 10px var(--neon-red-color-2), 0 0 20px var(--neon-red-color-3), 0 0 30px #f50000;
+
+}
