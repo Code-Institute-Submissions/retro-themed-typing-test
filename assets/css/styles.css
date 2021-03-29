@@ -41,3 +41,8 @@ a:hover {
   color: var(--neon-red-color-1);
   text-shadow: 0 0 3px var(--neon-red-color-1), 0 0 10px var(--neon-red-color-2), 0 0 20px var(--neon-red-color-3), 0 0 30px #f50000;
 }
+
+.neonglow {
+  color: var(--neon-red-color-1);
+  text-shadow: 0 0 3px var(--neon-red-color-1), 0 0 10px var(--neon-red-color-2), 0 0 20px var(--neon-red-color-3), 0 0 30px #f50000;
+}
