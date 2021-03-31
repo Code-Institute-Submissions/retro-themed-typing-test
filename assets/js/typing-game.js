@@ -16,7 +16,11 @@ function playCounter() {
       } else {
         clearTimeout(countToStart);
         $("#typing-test").removeClass("d-none");
-        return "GO!";
+        $(this).text("GO!");
+        setTimeout(function(){
+          $("#pre-countdown").addClass("d-none");
+        }, 1000)
+        return;
       }
     });
 
