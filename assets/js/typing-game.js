@@ -7,5 +7,6 @@ $(document).ready(function() {
 });
 
 function playCounter() {
-  
+  var countToStart = setInterval(function() {
+  }, 1400);
 }
