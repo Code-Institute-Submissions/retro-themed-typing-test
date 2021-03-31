@@ -59,3 +59,8 @@ a.active-link {
 .fs-7 {
   font-size: .9em;
 }
+
+.mobile-nav {
+  border-top: 1px solid var(--neon-red-color-3);
+  border-bottom: 1px solid var(--neon-red-color-3);
+}
