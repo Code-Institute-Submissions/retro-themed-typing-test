@@ -4,12 +4,12 @@ $(document).ready(function() {
   $("#start-game").click(function() {
     $("#welcome-section").css("display", "none"); //Hides the welcome-section when the play button is clicked.
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
-    playCounter();
+    preCountdown();
   });
 });
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
-function playCounter() {
+function preCountdown() {
   var countToStart = setInterval(function() {
     $("#startCountdown").text(function(i, text) {
       if (parseInt(text) > 0) {
