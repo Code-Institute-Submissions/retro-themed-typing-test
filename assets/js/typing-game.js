@@ -71,6 +71,7 @@ function restart(){
 
   async function renderSentence(){
     var sentence = "";
+    var sentences = "";
     sentence += await getRandomSentence();
     words = sentence.split(' ');
     for(var w = 0; w < words.length; w++){
