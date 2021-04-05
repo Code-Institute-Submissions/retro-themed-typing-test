@@ -75,8 +75,9 @@ function restart(){
     sentence += await getRandomSentence();
     words = sentence.split(' ');
     for(var w = 0; w < words.length; w++){
-      $("#row1").html('<span word-number="'+w+'">'+words[w]+'</span>');
+      sentences += '<span word-number="'+w+'">'+words[w]+'</span>';
     }
+    $("#row1").html(sentences);
   }
   renderSentence()
 }
