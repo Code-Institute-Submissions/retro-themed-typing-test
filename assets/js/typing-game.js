@@ -72,7 +72,7 @@ function restart(){
   async function renderSentence(){
     var sentence = "";
     sentence += await getRandomSentence();
-
+    words = sentence.split(' ');
   }
   renderSentence()
 }
