@@ -18,12 +18,12 @@ function preCountdown() {
         return parseInt(text) - 1;
       } else {
         clearTimeout(countToStart);
-        $("#typing-test").removeClass("d-none");
         $(this).text("GO!");
         preCountdownSound($(this).text());
         setTimeout(function(){
           $("#pre-countdown").addClass("d-none");
         }, 1000)
+        $("#typing-game").removeClass("d-none");
         return;
       }
     });
@@ -60,5 +60,5 @@ function preCountdownSound(preCountdownSec){
 }
 
 function restart(){
-  
+
 }
