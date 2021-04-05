@@ -31,6 +31,7 @@ function preCountdown() {
   }, 1200);
 }
 
+//Play's audio sounds on 3, 2, 1, GO!
 function preCountdownSound(preCountdownSec){
   var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
