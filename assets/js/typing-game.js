@@ -66,4 +66,8 @@ function restart(){
       .then(response => response.json())
       .then (data => data.content)
   }
+
+  function renderSentence(){
+    var sentence = "";
+  }
 }
