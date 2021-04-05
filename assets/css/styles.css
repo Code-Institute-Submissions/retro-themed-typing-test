@@ -64,3 +64,8 @@ a.active-link {
   border-top: 1px solid var(--neon-red-color-3);
   border-bottom: 1px solid var(--neon-red-color-3);
 }
+
+div .words {
+  text-align: center;
+  font-weight: bold;
+}
