@@ -1,6 +1,7 @@
-const RANDOM_QUOTE_API_URL = 'https://api.quotable.io/random'; //API I will call to use the strings returned
+const RANDOM_SENTENCE_API_URL = 'https://api.quotable.io/random'; //API I will call to use the strings returned
 
 $(document).ready(function() {
+  restart();
   $("#start-game").click(function() {
     $("#welcome-section").css("display", "none"); //Hides the welcome-section when the play button is clicked.
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
@@ -60,5 +61,9 @@ function preCountdownSound(preCountdownSec){
 }
 
 function restart(){
-
+  function getRandomSentence(){
+    return fetch(RANDOM_SENTENCE_API_URL)
+      .then(response => response.json())
+      .then (data => data.content)
+  }
 }
