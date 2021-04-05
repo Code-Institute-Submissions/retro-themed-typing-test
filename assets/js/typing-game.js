@@ -36,4 +36,9 @@ function preCountdownSound(preCountdownSec){
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
   var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
   var audioGo = $("<audio id='audioGo' src='assets/sounds/go-precountdown.mp3'></audio>");
+
+  if (preCountdownSec == 3) {
+    $("body").append(audio3);
+    document.getElementById("audio3").play();
+  }
 }
