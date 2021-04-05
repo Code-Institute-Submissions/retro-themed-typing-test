@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
 function preCountdown() {
-  preCountdownSound(parseInt($("#startCountdown").text())); 
+  preCountdownSound(parseInt($("#startCountdown").text()));
   var countToStart = setInterval(function() {
     $("#startCountdown").text(function(i, text) {
       if (parseInt(text) > 0) {
@@ -20,6 +20,7 @@ function preCountdown() {
         clearTimeout(countToStart);
         $("#typing-test").removeClass("d-none");
         $(this).text("GO!");
+        preCountdownSound($(this).text());
         setTimeout(function(){
           $("#pre-countdown").addClass("d-none");
         }, 1000)
