@@ -27,3 +27,10 @@ function preCountdown() {
 
   }, 1400);
 }
+
+function preCountdownSound(){
+  var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
+  var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
+  var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
+  var audioGo = $("<audio id='audioGo' src='assets/sounds/go-precountdown.mp3'></audio>");
+}
