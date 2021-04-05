@@ -72,10 +72,10 @@ function restart(){
   async function renderSentence(){
     var sentence = "";
     var sentences = "";
-    sentence += await getRandomSentence();
+    sentence += await getRandomSentence() + " ";
     words = sentence.split(' ');
     for(var w = 0; w < words.length; w++){
-      sentences += '<span word-number="'+w+'">'+words[w]+'</span>';
+      sentences += '<span word-number="'+w+'">'+words[w]+'</span> ';
     }
     $("#row1").html(sentences);
   }
