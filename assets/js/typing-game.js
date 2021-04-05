@@ -58,3 +58,7 @@ function preCountdownSound(preCountdownSec){
     document.getElementById("audioGo").play();
   }
 }
+
+function restart(){
+  
+}
