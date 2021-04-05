@@ -8,6 +8,9 @@ $(document).ready(function() {
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
     preCountdown();
   });
+  $("#restartGame").on("click", function() {
+    restart();
+  });
 });
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
