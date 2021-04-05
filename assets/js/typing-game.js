@@ -70,7 +70,6 @@ function restart(){
   async function renderSentence(){
     var sentence = "";
     sentence += await getRandomSentence();
-    console.log(sentence)
   }
   renderSentence()
 }
