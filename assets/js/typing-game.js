@@ -67,7 +67,7 @@ function restart(){
       .then (data => data.content)
   }
 
-  function renderSentence(){
+  async function renderSentence(){
     var sentence = "";
     sentence += await getRandomSentence();
     console.log(sentence)
