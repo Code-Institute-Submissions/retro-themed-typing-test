@@ -23,7 +23,7 @@ function preCountdown() {
         $(this).text("GO!");
         preCountdownSound($(this).text());
         setTimeout(function(){
-          $("#pre-countdown").addClass("d-none");
+          $("#pre-countdown").parent().addClass("d-none");
         }, 1000)
         $("#typing-game").removeClass("d-none");
         return;
