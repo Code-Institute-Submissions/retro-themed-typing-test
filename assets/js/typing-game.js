@@ -62,6 +62,7 @@ function preCountdownSound(preCountdownSec){
 }
 
 function restart(){
+  words = "";
   function getRandomSentence(){
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
