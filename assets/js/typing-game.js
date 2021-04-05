@@ -69,5 +69,8 @@ function restart(){
 
   function renderSentence(){
     var sentence = "";
+    sentence += await getRandomSentence();
+    console.log(sentence)
   }
+  renderSentence()
 }
