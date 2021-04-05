@@ -1,4 +1,5 @@
 const RANDOM_SENTENCE_API_URL = 'https://api.quotable.io/random'; //API I will call to use the strings returned
+var words;
 
 $(document).ready(function() {
   restart();
@@ -70,6 +71,7 @@ function restart(){
   async function renderSentence(){
     var sentence = "";
     sentence += await getRandomSentence();
+
   }
   renderSentence()
 }
