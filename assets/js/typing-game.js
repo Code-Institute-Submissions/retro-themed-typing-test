@@ -28,7 +28,7 @@ function preCountdown() {
       }
     });
 
-  }, 1400);
+  }, 1200);
 }
 
 function preCountdownSound(preCountdownSec){
