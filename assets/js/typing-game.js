@@ -10,9 +10,11 @@ $(document).ready(function() {
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
 function preCountdown() {
+  preCountdownSound(parseInt($("#startCountdown").text())); 
   var countToStart = setInterval(function() {
     $("#startCountdown").text(function(i, text) {
       if (parseInt(text) > 0) {
+        preCountdownSound(parseInt(text) - 1);
         return parseInt(text) - 1;
       } else {
         clearTimeout(countToStart);
@@ -28,7 +30,7 @@ function preCountdown() {
   }, 1400);
 }
 
-function preCountdownSound(){
+function preCountdownSound(preCountdownSec){
   var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
   var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
