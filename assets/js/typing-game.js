@@ -41,4 +41,19 @@ function preCountdownSound(preCountdownSec){
     $("body").append(audio3);
     document.getElementById("audio3").play();
   }
+
+  if (preCountdownSec == 2) {
+    $("body").append(audio2);
+    document.getElementById("audio2").play();
+  }
+
+  if (preCountdownSec == 1) {
+    $("body").append(audio1);
+    document.getElementById("audio1").play();
+  }
+
+  if (preCountdownSec == "GO!") {
+    $("body").append(audioGo);
+    document.getElementById("audioGo").play();
+  }
 }
