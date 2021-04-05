@@ -69,3 +69,12 @@ div .words {
   text-align: center;
   font-weight: bold;
 }
+
+.words-card {
+    border-image-source: linear-gradient(to bottom, #dc3545, #f8f9fa 72%) !important;
+    border-image-slice: 1;
+    border-width: 3px;
+    background: 0 0;
+    box-shadow: none;
+    padding: 20px;
+}
