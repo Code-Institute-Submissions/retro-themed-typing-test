@@ -89,3 +89,10 @@ div .words {
   box-shadow: 5px 5px 15px 0px #ffffff;
   border: 1px solid #131517;
 }
+
+#typingInput:focus {
+  outline: none;
+  -webkit-box-shadow: 5px 5px 15px 5px #beb2ff;
+  box-shadow: 5px 5px 15px 0px #beb2ff;
+  border: #beb2ff 2px solid;
+}
