@@ -78,3 +78,14 @@ div .words {
     box-shadow: none;
     padding: 20px;
 }
+
+#typingInput {
+  border-radius: 8px;
+  border: 3px solid #890a02;
+  height: 40px;
+  margin: 10px;
+  width: 500px;
+  -webkit-box-shadow: 5px 5px 15px 5px #ffffff;
+  box-shadow: 5px 5px 15px 0px #ffffff;
+  border: 1px solid #131517;
+}
