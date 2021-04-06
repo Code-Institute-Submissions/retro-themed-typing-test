@@ -85,3 +85,10 @@ function restart(){
   }
   renderSentence()
 }
+
+function keyListener(){
+  //On key release in typing input field
+  typingInput.keyup(function(event){
+    
+  })
+}
