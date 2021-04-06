@@ -101,5 +101,7 @@ function gameCountdown(){
   var secTxt;
 
   minTxt = Math.floor(gameTimer / 60); //Returns 0 if gameTimer is < 60
+  secTxt = gameTimer % 60; //Returns seconds
+
   }, 1000)
 }
