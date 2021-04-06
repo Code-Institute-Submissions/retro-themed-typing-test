@@ -94,6 +94,8 @@ function keyListener(){
 }
 
 function gameCountdown(){
+  window.setInterval(function(){
   var minTxt;
   var secTxt;
+  }, 1000)
 }
