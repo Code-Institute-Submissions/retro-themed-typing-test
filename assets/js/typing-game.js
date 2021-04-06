@@ -1,5 +1,6 @@
 const RANDOM_SENTENCE_API_URL = 'https://api.quotable.io/random'; //API I will call to use the strings returned
 var words;
+var typingInput = $("input#typingInput");
 
 $(document).ready(function() {
   restart();
