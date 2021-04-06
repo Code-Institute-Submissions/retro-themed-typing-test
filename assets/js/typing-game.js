@@ -106,5 +106,7 @@ function gameCountdown(){
   if(secTxt < 10){
     secTxt = "0" + secTxt;
   }
+
+  $("#gameCountdown").text(minTxt + ":" + secTxt);
   }, 1000)
 }
