@@ -89,6 +89,10 @@ function restart(){
 function keyListener(){
   //On key release in typing input field
   typingInput.keyup(function(event){
-    
+    gameCountdown();
   })
+}
+
+function gameCountdown(){
+
 }
