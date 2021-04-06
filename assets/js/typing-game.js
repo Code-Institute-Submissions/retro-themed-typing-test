@@ -99,5 +99,7 @@ function gameCountdown(){
   gameTimer--;
   var minTxt;
   var secTxt;
+
+  minTxt = Math.floor(gameTimer / 60); //Returns 0 if gameTimer is < 60
   }, 1000)
 }
