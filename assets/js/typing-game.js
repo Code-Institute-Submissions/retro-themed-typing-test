@@ -1,6 +1,6 @@
 const RANDOM_SENTENCE_API_URL = 'https://api.quotable.io/random'; //API I will call to use the strings returned
 var words;
-var typingInput = $("input#typingInput");
+var typingInput = $("#typingInput");
 
 $(document).ready(function() {
   restart();
@@ -12,6 +12,7 @@ $(document).ready(function() {
   $("#restartGame").on("click", function() {
     restart();
   });
+
 });
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
@@ -33,7 +34,7 @@ function preCountdown() {
         return;
       }
     });
-
+    keyListener();
   }, 1200);
 }
 
