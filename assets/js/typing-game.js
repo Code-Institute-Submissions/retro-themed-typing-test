@@ -109,5 +109,13 @@ function gameCountdown(){
   }
 
   $("#gameCountdown").text(minTxt + ":" + secTxt);
+
+  if (gameTimer > 9) {
+    $("#gameCountdown").text("0:" + gameTimer);
+  } else if (gameTimer > 0) {
+    $("#gameCountdown").text("0:0" + gameTimer);
+  } else {
+    $("#gameCountdown").text("0:00");
+  }
   }, 1000)
 }
