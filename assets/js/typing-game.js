@@ -28,7 +28,7 @@ function preCountdown() {
         clearTimeout(countToStart);
         $(this).text("GO!");
         preCountdownSound($(this).text());
-        setTimeout(function(){
+        setTimeout(function() {
           $("#pre-countdown").parent().addClass("d-none");
         }, 1000)
         $("#typing-game").removeClass("d-none");
@@ -40,7 +40,7 @@ function preCountdown() {
 }
 
 //Play's audio sounds on 3, 2, 1, GO!
-function preCountdownSound(preCountdownSec){
+function preCountdownSound(preCountdownSec) {
   var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
   var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
@@ -67,61 +67,62 @@ function preCountdownSound(preCountdownSec){
   }
 }
 
-function restart(){
+function restart() {
   words = "";
-  function getRandomSentence(){
+
+  function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
-      .then (data => data.content)
+      .then(data => data.content)
   }
 
-  async function renderSentence(){
+  async function renderSentence() {
     var sentence = "";
     var sentences = "";
     sentence += await getRandomSentence() + " ";
     words = sentence.split(' ');
-    for(var w = 0; w < words.length; w++){
-      sentences += '<span word-number="'+w+'">'+words[w]+'</span> ';
+    for (var w = 0; w < words.length; w++) {
+      sentences += '<span word-number="' + w + '">' + words[w] + '</span> ';
     }
     $("#row1").html(sentences);
   }
   renderSentence()
 }
 
-function keyListener(){
+function keyListener() {
   //On key release in typing input field
-  typingInput.keyup(function(event){
+  typingInput.keyup(function(event) {
     gameCountdown();
     compareKeyTyped();
   })
 }
 
-function gameCountdown(){
+function gameCountdown() {
   var gameTimer = 60;
-  window.setInterval(function(){
-  gameTimer--;
-  var minTxt;
-  var secTxt;
+  window.setInterval(function() {
+    gameTimer--;
+    var minTxt;
+    var secTxt;
 
-  minTxt = Math.floor(gameTimer / 60); //Returns 0 if gameTimer is < 60
-  secTxt = gameTimer % 60; //Returns seconds
+    minTxt = Math.floor(gameTimer / 60); //Returns 0 if gameTimer is < 60
+    secTxt = gameTimer % 60; //Returns seconds
 
-  if(secTxt < 10){
-    secTxt = "0" + secTxt;
-  }
+    if (secTxt < 10) {
+      secTxt = "0" + secTxt;
+    }
 
-  $("#gameCountdown").text(minTxt + ":" + secTxt);
+    $("#gameCountdown").text(minTxt + ":" + secTxt);
 
-  if (gameTimer > 9) {
-    $("#gameCountdown").text("0:" + gameTimer);
-  } else if (gameTimer > 0) {
-    $("#gameCountdown").text("0:0" + gameTimer);
-  } else {
-    $("#gameCountdown").text("0:00");
-  }
+    if (gameTimer > 9) {
+      $("#gameCountdown").text("0:" + gameTimer);
+    } else if (gameTimer > 0) {
+      $("#gameCountdown").text("0:0" + gameTimer);
+    } else {
+      $("#gameCountdown").text("0:00");
+    }
   }, 1000)
 }
 
-function compareKeyTyped(){
-  
+function compareKeyTyped() {
+
 }
