@@ -91,6 +91,7 @@ function keyListener(){
   //On key release in typing input field
   typingInput.keyup(function(event){
     gameCountdown();
+    compareKeyTyped();
   })
 }
 
@@ -118,4 +119,8 @@ function gameCountdown(){
     $("#gameCountdown").text("0:00");
   }
   }, 1000)
+}
+
+function compareKeyTyped(){
+
 }
