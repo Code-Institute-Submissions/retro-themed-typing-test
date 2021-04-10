@@ -101,3 +101,9 @@ div .words {
   box-shadow: 5px 5px 15px 0px #beb2ff;
   border: #beb2ff 2px solid;
 }
+
+.highlight {
+  color: #beb2ff;
+  text-shadow: 0 0 3px #beb2ff, 0 0 10px #584dff, 0 0 20px #1b00fb, 0 0 30px #1b00fb;
+  text-decoration: underline;
+}
