@@ -131,6 +131,9 @@ function gameCountdown() {
 }
 
 function compareKeyTyped() {
+  var bkspaceKey = 8;
+  var delKey = 46;
+
   if (preInputVal === "" && inputVal === "") {
     inputVal = typingInput.val();
   } else {
