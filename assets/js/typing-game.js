@@ -95,6 +95,7 @@ function restart() {
       sentences += '<span word-number="' + w + '">' + words[w] + '</span> ';
     }
     $("#row1").html(sentences);
+    $("#row1 span:first").addClass("highlight");
   }
   renderSentence()
 }
