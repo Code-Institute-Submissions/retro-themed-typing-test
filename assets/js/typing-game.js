@@ -131,7 +131,7 @@ function compareKeyTyped() {
   if (preInputVal === "" && inputVal === "") {
     inputVal = typingInput.val();
   } else {
-    preInputVal = inputvalue;
+    preInputVal = inputVal;
     inputVal = typingInput.val();
   }
 }
