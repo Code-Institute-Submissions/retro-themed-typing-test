@@ -8,6 +8,7 @@ var currentSpanNo = 0;
 var correctCounter = 0;
 
 var loading = 0;
+var scalePreCountdown = 1;
 
 $(document).ready(function() {
   restart();
@@ -135,7 +136,8 @@ function gameCountdown() {
 }
 
 function animatePreCountdown(){
-  
+  scalePreCountdown++;
+  $("#startCountdown").css("transform", "scale("+scalePreCountdown+")");
 }
 
 function compareKeyTyped() {
