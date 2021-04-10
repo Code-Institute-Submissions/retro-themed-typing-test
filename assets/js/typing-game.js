@@ -134,6 +134,10 @@ function gameCountdown() {
   }, 1000)
 }
 
+function animatePreCountdown(){
+  
+}
+
 function compareKeyTyped() {
   var bkspaceKey = 8;
   var delKey = 46;
