@@ -54,21 +54,25 @@ function preCountdownSound(preCountdownSec) {
   var audioGo = $("<audio id='audioGo' src='assets/sounds/go-precountdown.mp3'></audio>");
 
   if (preCountdownSec == 3) {
+    animatePreCountdown();
     $("body").append(audio3);
     document.getElementById("audio3").play();
   }
 
   if (preCountdownSec == 2) {
+    animatePreCountdown();
     $("body").append(audio2);
     document.getElementById("audio2").play();
   }
 
   if (preCountdownSec == 1) {
+    animatePreCountdown();
     $("body").append(audio1);
     document.getElementById("audio1").play();
   }
 
   if (preCountdownSec == "GO!") {
+    animatePreCountdown();
     $("body").append(audioGo);
     document.getElementById("audioGo").play();
   }
