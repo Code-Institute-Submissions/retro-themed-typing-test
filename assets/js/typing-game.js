@@ -162,5 +162,7 @@ function compareKeyTyped() {
 
   if(event.which == spaceKey && typingInput.val() == " "){
      typingInput.val("");
+  } else if (event.which == spaceKey && loading == 0) {
+
   }
 }
