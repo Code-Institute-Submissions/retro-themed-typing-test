@@ -77,6 +77,7 @@ function restart() {
   }
 
   async function renderSentence() {
+    var noOfSetences = 0;
     var sentence = "";
     var sentences = "";
     sentence += await getRandomSentence() + " ";
