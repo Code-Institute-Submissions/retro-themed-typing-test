@@ -6,6 +6,9 @@ var inputVal = ""; // Is set to user input value
 
 var currentSpanNo = 0;
 var correctCounter = 0;
+
+var loading = 0;
+
 $(document).ready(function() {
   restart();
   $("#start-game").click(function() {
