@@ -134,7 +134,7 @@ function compareKeyTyped() {
   var bkspaceKey = 8;
   var delKey = 46;
   var spaceKey = 32;
-  
+
   if (preInputVal === "" && inputVal === "") {
     inputVal = typingInput.val();
   } else {
@@ -157,4 +157,7 @@ function compareKeyTyped() {
         break;
     }
 
+  if(event.which == spaceKey && typingInput.val() == " "){
+     typingInput.val("");
+  }
 }
