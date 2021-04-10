@@ -141,5 +141,18 @@ function compareKeyTyped() {
     inputVal = typingInput.val();
   }
 
-  currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');#
+  currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
+
+  // if the delete key is pressed
+  var keyid = event.which;
+    switch (keyid) {
+      case 8:
+        correctCounter += preInputVal.length - inputVal.length;
+        break;
+      case 46:
+        correctCounter += preInputVal.length - inputVal.length;;
+        break;
+      default:
+        break;
+    }
 }
