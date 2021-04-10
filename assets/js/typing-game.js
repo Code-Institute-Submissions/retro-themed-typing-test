@@ -3,6 +3,9 @@ var words;
 var typingInput = $("#typingInput"); // Input element
 var preInputVal = ""; // Is set to the value before next word
 var inputVal = ""; // Is set to user input value
+
+var currentSpanNo = 0;
+
 $(document).ready(function() {
   restart();
   $("#start-game").click(function() {
@@ -134,4 +137,6 @@ function compareKeyTyped() {
     preInputVal = inputVal;
     inputVal = typingInput.val();
   }
+
+  currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
 }
