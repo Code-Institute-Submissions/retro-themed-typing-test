@@ -80,7 +80,10 @@ function restart() {
     var noOfSetences = 0;
     var sentence = "";
     var sentences = "";
+    do {
     sentence += await getRandomSentence() + " ";
+    noOfSetences = sentence.split(' ').length;
+  } while(noOfSetences < 250)
     words = sentence.split(' ');
     for (var w = 0; w < words.length; w++) {
       sentences += '<span word-number="' + w + '">' + words[w] + '</span> ';
