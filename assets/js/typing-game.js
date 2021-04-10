@@ -146,13 +146,14 @@ function compareKeyTyped() {
   // if the delete key is pressed
   var keyid = event.which;
     switch (keyid) {
-      case 8:
+      case bkspaceKey:
         correctCounter += preInputVal.length - inputVal.length;
         break;
-      case 46:
+      case delKey:
         correctCounter += preInputVal.length - inputVal.length;;
         break;
       default:
         break;
     }
+
 }
