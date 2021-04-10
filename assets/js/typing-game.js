@@ -128,7 +128,7 @@ function gameCountdown() {
 }
 
 function compareKeyTyped() {
-  if (preInputVal === "" && inputvalue === "") {
+  if (preInputVal === "" && inputVal === "") {
     inputVal = typingInput.val();
   } else {
     preInputVal = inputvalue;
