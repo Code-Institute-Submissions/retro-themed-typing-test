@@ -182,5 +182,8 @@ function compareKeyTyped() {
       } else {
         currentSpan.removeClass("highlight").addClass("incorrect");
       }
+
+    //Next span
+    currentSpan++;
   }
 }
