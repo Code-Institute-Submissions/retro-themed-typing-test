@@ -177,5 +177,8 @@ function compareKeyTyped() {
      typingInput.val("");
   } else if (event.which == spaceKey && loading == 0) {
     var typedValues = typingInput.val().split(" "); // User entered values array
+    if (typedValues[0] == words[wordpointer]) {
+        currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
+      }
   }
 }
