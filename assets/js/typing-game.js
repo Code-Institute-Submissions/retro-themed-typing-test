@@ -176,6 +176,6 @@ function compareKeyTyped() {
   if(event.which == spaceKey && typingInput.val() == " "){
      typingInput.val("");
   } else if (event.which == spaceKey && loading == 0) {
-    var typedValues = typingInput.val().split(" ");
+    var typedValues = typingInput.val().split(" "); // User entered values array
   }
 }
