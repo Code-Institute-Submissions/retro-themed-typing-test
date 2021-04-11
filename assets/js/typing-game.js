@@ -38,7 +38,9 @@ function preCountdown() {
         setTimeout(function() {
           $("#pre-countdown").parent().addClass("d-none");
         }, 1000)
+        setTimeout(function() {
         $("#typing-game").removeClass("d-none");
+      }, 1000)
         return;
       }
     });
