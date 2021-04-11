@@ -114,3 +114,8 @@ div .words {
   -webkit-text-shadow: 0px 0px 7px 0px rgba(17, 17, 17, .3);
   -moz-text-shadow: 0px 0px 7px 0px rgba(17, 17, 17, .3);
 }
+
+.incorrect {
+  color: #ffb2b2;
+  text-shadow: 0 0 3px #ffb2b2, 0 0 10px #ff4d4d, 0 0 20px #fb0000, 0 0 30px #f50000;
+}
