@@ -17,6 +17,7 @@ $(document).ready(function() {
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
     preCountdown();
   });
+  keyListener();
   $("#restartGame").on("click", function() {
     restart();
   });
@@ -44,7 +45,6 @@ function preCountdown() {
         return;
       }
     });
-    keyListener();
   }, 1200);
 }
 
