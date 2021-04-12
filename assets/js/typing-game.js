@@ -176,6 +176,7 @@ function compareKeyTyped() {
   if(event.which == spaceKey && typingInput.val() == " "){
      typingInput.val("");
   } else if (event.which == spaceKey && loading == 0) {
+    currentSpan.removeClass("incorrect")
     var typedValues = typingInput.val().split(" "); // User entered values array
     if (typedValues[0] == words[currentSpanNo]) {
         currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
