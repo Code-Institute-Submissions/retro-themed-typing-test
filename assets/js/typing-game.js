@@ -195,8 +195,9 @@ function compareKeyTyped() {
     var currentSpanPos = currentSpan.position();
     var prevSpanPos = 0;
 
+    // Checks span top position to check if there is a text wrap to find the next row if there is we increment rowCounter
     if (currentSpanPos.top > prevSpanPos + 49) {
-      row_counter++;
+      rowCounter++;
       prevSpanPos = currentSpanPos.top;
     }
 
