@@ -6,6 +6,7 @@ var inputVal = ""; // Is set to user input value
 
 var currentSpanNo = 0;
 var correctCounter = 0;
+var rowCounter = 0;
 
 var loading = 0;
 var scalePreCountdown = 1;
@@ -192,6 +193,12 @@ function compareKeyTyped() {
     currentSpan.addClass("highlight");
 
     var currentSpanPos = currentSpan.position();
+    var prevSpanPos = 0;
+
+    if (currentSpanPos.top > prevSpanPos + 49) {
+      row_counter++;
+      prevSpanPos = currentSpanPos.top;
+    }
 
     typingInput.val("");
   } else {
