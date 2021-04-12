@@ -184,6 +184,7 @@ function compareKeyTyped() {
       }
 
     //Next span
-    currentSpan++;
+    currentSpanNo++;
+
   }
 }
