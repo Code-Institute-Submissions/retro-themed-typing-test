@@ -40,9 +40,9 @@ function preCountdown() {
           $("#pre-countdown").parent().addClass("d-none");
         }, 1000)
         setTimeout(function() {
-        $("#typing-game").removeClass("d-none");
-        typingInput.focus();
-      }, 1000)
+          $("#typing-game").removeClass("d-none");
+          typingInput.focus();
+        }, 1000)
         return;
       }
     });
@@ -95,9 +95,9 @@ function restart() {
     var sentence = "";
     var sentences = "";
     do {
-    sentence += await getRandomSentence() + " ";
-    noOfSetences = sentence.split(' ').length;
-  } while(noOfSetences < 250)
+      sentence += await getRandomSentence() + " ";
+      noOfSetences = sentence.split(' ').length;
+    } while (noOfSetences < 250)
     words = sentence.split(' ');
     for (var w = 0; w < words.length; w++) {
       sentences += '<span word-number="' + w + '">' + words[w] + '</span> ';
@@ -142,9 +142,9 @@ function gameCountdown() {
   }, 1000)
 }
 
-function animatePreCountdown(){
+function animatePreCountdown() {
   scalePreCountdown++;
-  $("#startCountdown").css("transform", "scale("+scalePreCountdown+")");
+  $("#startCountdown").css("transform", "scale(" + scalePreCountdown + ")");
 }
 
 function compareKeyTyped() {
@@ -163,27 +163,27 @@ function compareKeyTyped() {
 
   // if the delete key is pressed
   var keyid = event.which;
-    switch (keyid) {
-      case bkspaceKey:
-        correctCounter += preInputVal.length - inputVal.length;
-        break;
-      case delKey:
-        correctCounter += preInputVal.length - inputVal.length;;
-        break;
-      default:
-        break;
-    }
+  switch (keyid) {
+    case bkspaceKey:
+      correctCounter += preInputVal.length - inputVal.length;
+      break;
+    case delKey:
+      correctCounter += preInputVal.length - inputVal.length;;
+      break;
+    default:
+      break;
+  }
 
-  if(event.which == spaceKey && typingInput.val() == " "){
-     typingInput.val("");
+  if (event.which == spaceKey && typingInput.val() == " ") {
+    typingInput.val("");
   } else if (event.which == spaceKey && loading == 0) {
     currentSpan.removeClass("incorrect")
     var typedValues = typingInput.val().split(" "); // User entered values array
     if (typedValues[0] == words[currentSpanNo]) {
-        currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
-      } else {
-        currentSpan.removeClass("highlight").addClass("incorrect");
-      }
+      currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
+    } else {
+      currentSpan.removeClass("highlight").addClass("incorrect");
+    }
 
     //Next span
     currentSpanNo++;
