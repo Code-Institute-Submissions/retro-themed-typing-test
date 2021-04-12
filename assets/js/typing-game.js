@@ -187,5 +187,6 @@ function compareKeyTyped() {
     currentSpanNo++;
     currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
 
+    currentSpan.addClass("highlight");
   }
 }
