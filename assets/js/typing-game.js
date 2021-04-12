@@ -192,5 +192,12 @@ function compareKeyTyped() {
     currentSpan.addClass("highlight");
 
     typingInput.val("");
+  } else {
+    //If the value before space is wrong in anyway then show the incorrect class as indicator
+    if (typingInput.val().split(" ")[0] == words[currentSpanNo].substr(0, typingInput.val().length)) {
+      currentSpan.removeClass("incorrect").addClass("highlight");
+    } else {
+      currentSpan.removeClass("highlight").addClass("incorrect");
+    }
   }
 }
