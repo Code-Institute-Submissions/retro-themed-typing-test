@@ -191,6 +191,8 @@ function compareKeyTyped() {
 
     currentSpan.addClass("highlight");
 
+    var currentSpanPos = currentSpan.position();
+
     typingInput.val("");
   } else {
     //If the value before space is wrong in anyway then show the incorrect class as indicator
