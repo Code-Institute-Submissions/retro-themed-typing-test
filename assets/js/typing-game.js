@@ -185,6 +185,7 @@ function compareKeyTyped() {
 
     //Next span
     currentSpanNo++;
+    currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
 
   }
 }
