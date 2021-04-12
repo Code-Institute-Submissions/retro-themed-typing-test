@@ -41,6 +41,7 @@ function preCountdown() {
         }, 1000)
         setTimeout(function() {
         $("#typing-game").removeClass("d-none");
+        typingInput.focus();
       }, 1000)
         return;
       }
