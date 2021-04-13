@@ -189,7 +189,9 @@ function compareKeyTyped() {
     //Next span
     currentSpanNo++;
     currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
-
+    line_height = parseInt(
+      $('#row1 span[word-number="' + currentSpanNo + '"]').css("line-height")
+      );
     currentSpan.addClass("highlight");
 
     var currentSpanPos = currentSpan.position();
@@ -199,6 +201,11 @@ function compareKeyTyped() {
     if (currentSpanPos.top > prevSpanPos + 49) {
       rowCounter++;
       prevSpanPos = currentSpanPos.top;
+      var lineHeightOfSpan = line_height * rowCounter;
+      //var scrollDown = (rowCounter == 1) ? ($('#words').outerHeight() / 2) : (($('#words').outerHeight() / 2) * rowCounter) + 10;
+      $('#words').animate({
+        scrollTop: lineHeightOfSpan
+      }, 500);
     }
 
     typingInput.val("");
