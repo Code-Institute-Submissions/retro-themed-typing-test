@@ -87,6 +87,8 @@ function restart() {
   currentSpanNo = 0;
   rowCounter = 0;
   scalePreCountdown = 1;
+  gameCountdownStarted = 0;
+  $("#gameCountdown").text("1:00");
   $('#words').animate({scrollTop:0},200);
 
   function getRandomSentence() {
@@ -123,7 +125,9 @@ function keyListener() {
 
 function gameCountdown() {
   var gameTimer = 60;
-  window.setInterval(function() {
+  if(gameCountdownStarted == 0){
+    gameCountdownStarted = 1;
+    window.setInterval(function() {
     gameTimer--;
     var minTxt;
     var secTxt;
@@ -145,6 +149,7 @@ function gameCountdown() {
       $("#gameCountdown").text("0:00");
     }
   }, 1000)
+}
 }
 
 function animatePreCountdown() {
