@@ -4,6 +4,7 @@ var typingInput = $("#typingInput"); // Input element
 var preInputVal = ""; // Is set to the value before next word
 var inputVal = ""; // Is set to user input value
 
+var gameCountdownTimer = "";
 var currentSpanNo = 0;
 var correctCounter = 0;
 var rowCounter = 0;
@@ -87,9 +88,12 @@ function restart() {
   currentSpanNo = 0;
   rowCounter = 0;
   scalePreCountdown = 1;
-  gameCountdownStarted = 0;
-  $("#gameCountdown").text("1:00");
   $('#words').animate({scrollTop:0},200);
+
+  $("#gameCountdown").text("1:00");
+  gameCountdownStarted = 0;
+  window.clearTimeout(gameCountdownTimer);
+  gameCountdownTimer = "";
 
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
@@ -127,7 +131,7 @@ function gameCountdown() {
   var gameTimer = 60;
   if(gameCountdownStarted == 0){
     gameCountdownStarted = 1;
-    window.setInterval(function() {
+    gameCountdownTimer = window.setInterval(function() {
     gameTimer--;
     var minTxt;
     var secTxt;
