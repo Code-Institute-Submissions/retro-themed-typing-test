@@ -105,10 +105,17 @@ function restart() {
     var noOfSetences = 0;
     var sentence = "";
     var sentences = "";
+    $("#row1").hide("fast");
+    $("#row1").before(`<div id='spinner' class='d-flex justify-content-center align-items-center'>
+                      <div class='spinner-border' role="status"></div>
+                      </div>`);
     do {
       sentence += await getRandomSentence() + " ";
       noOfSetences = sentence.split(' ').length;
     } while (noOfSetences < 250)
+    $("#spinner").remove();
+    $("#row1").show("fast");
+
     words = sentence.split(' ');
     for (var w = 0; w < words.length; w++) {
       sentences += '<span word-number="' + w + '">' + words[w] + '</span> ';
