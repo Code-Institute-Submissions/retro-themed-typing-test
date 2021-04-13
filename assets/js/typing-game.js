@@ -87,6 +87,8 @@ function restart() {
   currentSpanNo = 0;
   rowCounter = 0;
   scalePreCountdown = 1;
+  $('#words').animate({scrollTop:0},200);
+
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
