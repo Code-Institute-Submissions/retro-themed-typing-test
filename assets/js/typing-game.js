@@ -84,7 +84,9 @@ function preCountdownSound(preCountdownSec) {
 
 function restart() {
   words = "";
-
+  currentSpanNo = 0;
+  rowCounter = 0;
+  scalePreCountdown = 1;
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
