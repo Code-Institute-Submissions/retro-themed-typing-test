@@ -7,6 +7,7 @@ var inputVal = ""; // Is set to user input value
 var gameCountdownTimer = "";
 var currentSpanNo = 0;
 var correctCounter = 0;
+var wrongCounter = 0;
 var rowCounter = 0;
 
 var loading = 0;
