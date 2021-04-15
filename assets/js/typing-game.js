@@ -98,7 +98,7 @@ function restart() {
 
   correctCounter = 0;
   wrongCounter = 0;
-  
+
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
@@ -208,8 +208,10 @@ function compareKeyTyped() {
     var typedValues = typingInput.val().split(" "); // User entered values array
     if (typedValues[0] == words[currentSpanNo]) {
       currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
+      correctCounter++;
     } else {
       currentSpan.removeClass("highlight").addClass("incorrect");
+      wrongCounter++;
     }
 
     //Next span
