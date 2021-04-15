@@ -240,3 +240,7 @@ function compareKeyTyped() {
     }
   }
 }
+
+function results(){
+
+}
