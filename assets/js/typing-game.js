@@ -96,6 +96,9 @@ function restart() {
   window.clearTimeout(gameCountdownTimer);
   gameCountdownTimer = "";
 
+  correctCounter = 0;
+  wrongCounter = 0;
+  
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
