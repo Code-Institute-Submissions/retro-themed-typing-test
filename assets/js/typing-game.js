@@ -30,22 +30,16 @@ $(document).ready(function() {
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
 function preCountdown() {
-  if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))) {
   preCountdownSound(parseInt($("#startCountdown").text()));
-  }
   var countToStart = setInterval(function() {
     $("#startCountdown").text(function(i, text) {
       if (parseInt(text) > 0) {
-        if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
         preCountdownSound(parseInt(text) - 1);
-        }
         return parseInt(text) - 1;
       } else {
         clearTimeout(countToStart);
         $(this).text("GO!");
-        if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
         preCountdownSound($(this).text());
-        }
         setTimeout(function() {
           $("#pre-countdown").parent().addClass("d-none");
         }, 1000)
@@ -68,26 +62,34 @@ function preCountdownSound(preCountdownSec) {
 
   if (preCountdownSec == 3) {
     animatePreCountdown();
+    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
     $("body").append(audio3);
     document.getElementById("audio3").play();
+    }
   }
 
   if (preCountdownSec == 2) {
     animatePreCountdown();
+    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
     $("body").append(audio2);
     document.getElementById("audio2").play();
+    }
   }
 
   if (preCountdownSec == 1) {
     animatePreCountdown();
+    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
     $("body").append(audio1);
     document.getElementById("audio1").play();
+    }
   }
 
   if (preCountdownSec == "GO!") {
     animatePreCountdown();
+    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
     $("body").append(audioGo);
     document.getElementById("audioGo").play();
+    }
   }
 }
 
