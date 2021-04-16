@@ -9,6 +9,7 @@ var currentSpanNo = 0;
 var correctCounter = 0;
 var wrongCounter = 0;
 var rowCounter = 0;
+var error_keystrokes = 0;
 
 var loading = 0;
 var scalePreCountdown = 1;
@@ -54,7 +55,9 @@ function preCountdown() {
 
 //Play's audio sounds on 3, 2, 1, GO!
 function preCountdownSound(preCountdownSec) {
-  var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
+  var audio1 = new Audio();
+  audio1.play();
+  audio1.src = 'assets/sounds/1-precountdown.mp3';
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
   var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
   var audioGo = $("<audio id='audioGo' src='assets/sounds/go-precountdown.mp3'></audio>");
@@ -73,8 +76,8 @@ function preCountdownSound(preCountdownSec) {
 
   if (preCountdownSec == 1) {
     animatePreCountdown();
-    $("body").append(audio1);
-    document.getElementById("audio1").play();
+    //$("body").append(audio1);
+    audio1.play();
   }
 
   if (preCountdownSec == "GO!") {
@@ -98,6 +101,7 @@ function restart() {
 
   correctCounter = 0;
   wrongCounter = 0;
+  error_keystrokes = 0;
 
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
@@ -164,6 +168,9 @@ function gameCountdown() {
       $("#gameCountdown").text("0:0" + gameTimer);
     } else {
       $("#gameCountdown").text("0:00");
+      window.clearInterval(gameCountdownTimer);
+      gameCountdownTimer = "";
+      results(correctCounter, wrongCounter);
     }
   }, 1000)
 }
@@ -209,11 +216,13 @@ function compareKeyTyped() {
     if (typedValues[0] == words[currentSpanNo]) {
       currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
       correctCounter++;
+      error_keystrokes += words[currentSpanNo].length;
+      error_keystrokes++;
     } else {
       currentSpan.removeClass("highlight").addClass("incorrect");
       wrongCounter++;
+      error_keystrokes -= Math.round(words[currentSpanNo].length / 2);
     }
-
     //Next span
     currentSpanNo++;
     currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
@@ -247,6 +256,11 @@ function compareKeyTyped() {
   }
 }
 
-function results(){
-
+function results(correct, wrong){
+  error_wpm = Math.round(error_keystrokes / 5);
+  $("#wpm").text(error_wpm + " WPM");
+  $("#keystrokes").text("Keystrokes: " + error_keystrokes);
+  $("#correct").text(correct);
+  $("#wrong").text(wrong);
+  $("#results").removeClass("d-none");
 }
