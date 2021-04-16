@@ -119,3 +119,11 @@ div .words {
   color: #ffb2b2;
   text-shadow: 0 0 3px #ffb2b2, 0 0 10px #ff4d4d, 0 0 20px #fb0000, 0 0 30px #f50000;
 }
+
+div#results {
+  -webkit-box-shadow: 5px 5px 15px 5px #ffffff;
+  box-shadow: 5px 5px 15px 5px #ffffff;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
