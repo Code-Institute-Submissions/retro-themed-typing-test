@@ -16,7 +16,7 @@ var scalePreCountdown = 1;
 
 $(document).ready(function() {
   restart();
-  $("#start-game").on('click touchend', function() {
+  $("#start-game").click(function() {
     $("#welcome-section").css("display", "none"); //Hides the welcome-section when the play button is clicked.
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
     preCountdown();
@@ -55,9 +55,7 @@ function preCountdown() {
 
 //Play's audio sounds on 3, 2, 1, GO!
 function preCountdownSound(preCountdownSec) {
-  var audio1 = new Audio();
-  audio1.play();
-  audio1.src = 'assets/sounds/1-precountdown.mp3';
+  var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
   var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
   var audioGo = $("<audio id='audioGo' src='assets/sounds/go-precountdown.mp3'></audio>");
@@ -76,7 +74,7 @@ function preCountdownSound(preCountdownSec) {
 
   if (preCountdownSec == 1) {
     animatePreCountdown();
-    //$("body").append(audio1);
+    $("body").append(audio1);
     audio1.play();
   }
 
