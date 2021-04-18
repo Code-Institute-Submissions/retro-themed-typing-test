@@ -275,5 +275,6 @@ function results(correct, wrong){
   $("#correct").text(correct);
   $("#wrong").text(wrong);
   $("#twitterShare").attr("href", 'https://twitter.com/intent/tweet?hashtags=retrotypingchallenge%20&ref_src=twsrc%5Etfw&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!&tw_p=tweetbutton&url=https://bradleyplaydon.github.io/retro-themed-typing-test/');
+  $("#telegramShare").attr("href", 'https://t.me/share/url?url=https://bradleyplaydon.github.io/retro-themed-typing-test/&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!')
   $("#results").removeClass("d-none");
 }
