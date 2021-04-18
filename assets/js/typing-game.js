@@ -112,6 +112,8 @@ function restart() {
   gameCountdownTimer = "";
 
   typingInput.removeAttr("disabled");
+  $("#gameCountdown").show();
+  $(".words-card").show();
   
   correctCounter = 0;
   wrongCounter = 0;
