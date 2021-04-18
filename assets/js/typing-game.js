@@ -184,6 +184,7 @@ function gameCountdown() {
       gameCountdownTimer = "";
       typingInput.attr("disabled", "");
       $("#gameCountdown").hide();
+      $(".words-card").hide();
       results(correctCounter, wrongCounter);
     }
   }, 1000)
