@@ -183,6 +183,7 @@ function gameCountdown() {
       window.clearInterval(gameCountdownTimer);
       gameCountdownTimer = "";
       typingInput.attr("disabled", "");
+      $("#gameCountdown").hide();
       results(correctCounter, wrongCounter);
     }
   }, 1000)
