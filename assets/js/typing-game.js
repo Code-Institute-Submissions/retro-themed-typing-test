@@ -274,5 +274,6 @@ function results(correct, wrong){
   $("#keystrokes").text("Keystrokes: " + error_keystrokes);
   $("#correct").text(correct);
   $("#wrong").text(wrong);
+  $("#twitterShare").attr("href", 'https://twitter.com/intent/tweet?hashtags=retrotypingchallenge%20&ref_src=twsrc%5Etfw&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!&tw_p=tweetbutton&url=https://bradleyplaydon.github.io/retro-themed-typing-test/');
   $("#results").removeClass("d-none");
 }
