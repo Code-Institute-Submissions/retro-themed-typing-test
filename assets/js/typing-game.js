@@ -113,6 +113,7 @@ function restart() {
 
   typingInput.removeAttr("disabled");
   typingInput.val("");
+  $("#results").hide();
   $("#gameCountdown").show();
   $(".words-card").show();
 
