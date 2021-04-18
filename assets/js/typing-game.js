@@ -111,6 +111,8 @@ function restart() {
   window.clearTimeout(gameCountdownTimer);
   gameCountdownTimer = "";
 
+  typingInput.removeAttr("disabled");
+  
   correctCounter = 0;
   wrongCounter = 0;
   error_keystrokes = 0;
