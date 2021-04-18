@@ -25,7 +25,13 @@ $(document).ready(function() {
   $("#restartGame").on("click", function() {
     restart();
   });
-
+  $("#facebookShare").click(function() {
+    FB.ui({
+      method: 'share',
+      href: 'https://bradleyplaydon.github.io/retro-themed-typing-test/',
+      quote: 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!'
+    }, function(response) {});
+  });
 });
 
 //Sets startCountdown text to 1 minus whatever number is already inputted into that field by parsing the text to an integer.
