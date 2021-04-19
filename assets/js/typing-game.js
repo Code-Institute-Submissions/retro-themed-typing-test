@@ -16,7 +16,7 @@ var scalePreCountdown = 1;
 
 $(document).ready(function() {
   restart();
-  $("#start-game").click(function() {
+  $("#start-game, #start-game2").click(function() {
     $("#welcome-section").css("display", "none"); //Hides the welcome-section when the play button is clicked.
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
     preCountdown();
