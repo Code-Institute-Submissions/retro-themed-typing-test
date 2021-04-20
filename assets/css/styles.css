@@ -65,6 +65,10 @@ a.active-link {
   border-bottom: 1px solid var(--neon-red-color-3);
 }
 
+#mobile-nav {
+  z-index: 9;
+}
+
 div .words {
   font-weight: bold;
   height: 130px;
