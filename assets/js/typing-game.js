@@ -14,6 +14,15 @@ var error_keystrokes = 0;
 var loading = 0;
 var scalePreCountdown = 1;
 
+var currentScrollPosition = 0;
+$(document).scroll(function(){
+    currentScrollPosition = $(this).scrollTop();
+});
+
+$(typingInput).focus(function(){
+    $(document).scrollTop(currentScrollPosition);
+});
+
 $(document).ready(function() {
   restart();
   $("#start-game, #start-game2").click(function() {
