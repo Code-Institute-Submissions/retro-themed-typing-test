@@ -16,9 +16,9 @@
 <body class="d-flex flex-column h-100">
   <header>
     <!-- Navbar -->
-    <nav class="navbar d-none d-lg-block d-md-block">
+    <nav class="navbar d-none d-lg-block d-md-none">
       <div class="container-fluid px-4">
-        <a href="index.html" class="navbar-brand">Retro Typing Game <span class="navbar-text ms-2 fs-6">How Fast Can You Type?</span></a>
+        <a href="#" class="navbar-brand">Retro Typing Game <span class="navbar-text ms-2 fs-6">How Fast Can You Type?</span></a>
         <ul class="list-group list-group-horizontal">
           <div class="list-group-item bg-transparent border-0 form-check form-switch">
             <label class="form-check-label" for="flexSwitchCheckDefault">Change to easy to read font</label>
@@ -28,27 +28,27 @@
             <a href="contact.html">Contact</a>
           </li>
           <li class="list-group-item border-start-0 border-top-0 border-bottom-0 border-right bg-dark">
-            <a href="#" class="active-link">FAQ</a>
+            <a href="faqs.html">FAQ</a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- Mobile Navbar -->
-    <nav class="navbar d-lg-none d-md-none bg-dark mobile-nav">
+    <nav class="navbar d-lg-none d-md-block bg-dark mobile-nav">
       <div class="container-fluid px-2">
-        <div class="col-3">
+        <div class="col-3 col-md-4">
           <button type="button" class="btn neonglow" data-bs-toggle="collapse" data-bs-target="#mobile-nav" aria-expanded="false" aria-controls="mobile-nav"><i class="fas fa-bars fs-1"></i></button>
         </div>
-        <div class="col-9">
-          <a href="index.html" class="navbar-brand">Retro Typing Game</a>
+        <div class="col-9 col-md-8">
+          <a href="#" class="navbar-brand">Retro Typing Game</a>
           <p class="fs-7 mb-0">How Fast Can You Type?</p>
         </div>
       </div>
     </nav>
     <div id="mobile-nav" class="collapse position-absolute w-100 bg-dark">
       <ul class="list-unstyled list-group text-center">
-        <li class="list-group-item bg-dark"><a href="index.html">Home</a></li>
-        <li class="list-group-item bg-dark"><a href="#" class="active-link">FAQ</a></li>
+        <li class="list-group-item bg-dark"><a href="#" class="active-link">Home</a></li>
+        <li class="list-group-item bg-dark"><a href="faqs.html">FAQ</a></li>
         <li class="list-group-item bg-dark"><a href="contact.html">Contact</a></li>
       </ul>
     </div>
