@@ -71,9 +71,13 @@ function preCountdown() {
 //Play's audio sounds on 3, 2, 1, GO!
 function preCountdownSound(preCountdownSec) {
   var audio1 = $("<audio id='audio1' src='assets/sounds/1-precountdown.mp3'></audio>");
+  audio1.prop("volume", 0.1);
   var audio2 = $("<audio id='audio2' src='assets/sounds/2-precountdown.mp3'></audio>");
+  audio2.prop("volume", 0.1);
   var audio3 = $("<audio id='audio3' src='assets/sounds/3-precountdown.mp3'></audio>");
+  audio3.prop("volume", 0.1);
   var audioGo = $("<audio id='audioGo' src='assets/sounds/go-precountdown.mp3'></audio>");
+  audioGo.prop("volume", 0.1);
 
   if (preCountdownSec == 3) {
     animatePreCountdown();
