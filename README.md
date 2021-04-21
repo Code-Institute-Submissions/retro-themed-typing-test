@@ -1,5 +1,5 @@
 # Retro Typing Game #
-![Retro typing game website](/wireframes/amiresponsivetypinggame.png "Retro typing game website")
+![Retro typing game website](/wireframes/amiresponsivetypinggame.PNG "Retro typing game website")
 *A Retro themed typing game where you can practice your typing skills.*
 ---
 ## **Project contents**
