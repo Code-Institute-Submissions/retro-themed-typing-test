@@ -155,3 +155,23 @@
   * W3 HTML Validator
   * W3C CSS Validator
   * emailJS for contact form
+
+  ### Testing
+  ---
+  User Story - As the user I want clear feedback when the word was typed correctly and incorrectly.
+
+  * **Plan**
+
+    When the user types and the word is either wrong or correct indicate with highlighting. And when the user starts to type if one letter doesn't match the word they're trying to type actively display that it's wrong.
+  * **Implementation**
+
+    Using an input element with the keydown function and event callback with conditions and css methods.
+  * **Tested**
+
+    I have tested this by pressing any key that is wrong to match the word which you are trying to type and also by typing the word correctly. This took a few bug fixes to get right.
+  * **Result**
+
+    Typing the wrong letters shows a red highlighted word to indicate what has been typed is incorrect, typing the correct word and pressing spacebar highlights the previous word green.
+
+  * **Verdict**
+    * It is now clearly indicated whether the word has been typed wrong or correct.
