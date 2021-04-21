@@ -137,3 +137,9 @@
   * HTML
   * CSS
   * JavaScript, jQuery
+
+  #### Coding library's / dependencies
+  * Bootstrap
+  * jQuery
+  * Font Awesome
+  * Facebook Software Development Kit (SDK)
