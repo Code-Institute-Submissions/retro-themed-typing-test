@@ -159,7 +159,7 @@
   ### Testing
   ---
   #### Correct/Wrong word typed indication
-  
+
   User Story - As the user I want clear feedback when the word was typed correctly and incorrectly.
 
   * **Plan**
@@ -178,3 +178,26 @@
   * **Verdict**
 
     It is now clearly indicated whether the word has been typed wrong or correct.
+
+  #### Readability
+
+  User Story - As the **user** I would like the words to be easy to read.
+
+  * **Plan**
+
+    For the user to be able to make the words easier to read by a toggle button.
+
+  * **Implementation**
+
+    Using the [Bootstrap docs](https://getbootstrap.com/docs/5.0/forms/checks-radios/#switches) on implementing switches I added jQuery for checking state to change a root CSS variable to an easier to read font.
+  * **Tested**
+
+    I tested this for mobile and tested it by pressing the toggle on all pages.
+
+  * **Result**
+
+    The toggle switches the font from Glass_TTY_VT220 to Helvetica font.
+
+  * **Verdict**
+
+    This can be improved by using cookies to remember switch state as currently every page refresh the state of the switch is not remembered by the browser therefore needing to be pressed every time you refresh the page.
