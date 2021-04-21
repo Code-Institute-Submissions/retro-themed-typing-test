@@ -1,4 +1,4 @@
-$("#flexSwitchCheckDefault").change(function(){
+$("#flexSwitchCheckDefault, #flexSwitchCheckDefaultMobile").change(function(){
     if(this.checked == true){
         setEasyToReadFont();
     }
