@@ -158,6 +158,8 @@
 
   ### Testing
   ---
+  #### Correct/Wrong word typed indication
+  
   User Story - As the user I want clear feedback when the word was typed correctly and incorrectly.
 
   * **Plan**
@@ -174,4 +176,5 @@
     Typing the wrong letters shows a red highlighted word to indicate what has been typed is incorrect, typing the correct word and pressing spacebar highlights the previous word green.
 
   * **Verdict**
+
     It is now clearly indicated whether the word has been typed wrong or correct.
