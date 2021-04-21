@@ -144,3 +144,14 @@
   * jQuery
   * Font Awesome
   * Facebook Software Development Kit (SDK)
+
+  #### Tools & Applications
+  * Git (History/Versioning)
+  * Atom (Code editing)
+  * Beautify package (Code formatting)
+  * Balsamiq (Wireframes)
+  * Chrome Dev Tools (Mobile responsiveness, Console error fixing, bug testing)
+  * Google Sheets for writing tests and expected results and fixes
+  * W3 HTML Validator
+  * W3C CSS Validator
+  
