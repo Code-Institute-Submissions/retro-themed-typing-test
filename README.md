@@ -201,3 +201,27 @@
   * **Verdict**
 
     This can be improved by using cookies to remember switch state as currently every page refresh the state of the switch is not remembered by the browser therefore needing to be pressed every time you refresh the page.
+
+  #### Restarting the game
+
+    User Story - As the **user** I would want to be able to restart the test in-case of a making a mistake.
+
+    * **Plan**
+
+      For the user to be able to reset the game so they can try again.
+
+    * **Implementation**
+
+      By implementing a button just to the right of the typing input element which on click runs a function to reset all variables and the game
+
+    * **Tested**
+
+      This works as intended and resets the game completely on click of the button.
+
+    * **Result**
+
+      Restarts the game with a visual loading indicator to the user to give an idea of state after the restart button is clicked.
+
+    * **Verdict**
+
+      This can be improved by only allowing the restart button to be clicked every so often as currently you can keep clicking the restart button which can end up with too many API calls causing problems.
