@@ -130,3 +130,10 @@
   * Difficulty changer
   * Timer changer
   * Multiplayer live head to head feature
+
+  ### Technologies used
+  ---
+  #### Coding languages
+  * HTML
+  * CSS
+  * JavaScript, jQuery
