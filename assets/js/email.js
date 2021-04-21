@@ -12,7 +12,7 @@ var dataT = {
         'username': 'example',
     }
 };
-
+$("#contactForm").submit(function(event) {
 $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
     type: 'POST',
     data: JSON.stringify(dataT),
@@ -21,4 +21,6 @@ $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
     alert('Your mail is sent!');
 }).fail(function(error) {
     alert('Oops... ' + JSON.stringify(error));
+});
+event.preventDefault();
 });
