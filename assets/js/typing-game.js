@@ -25,16 +25,16 @@ $(typingInput).focus(function(){
 
 $(document).ready(function() {
   restart();
-  $("#start-game, #start-game2").click(function() {
+  $("#start-game, #start-game2").click(function() { //Runs when either start-game button is clicked or if the play button in insructions is clicked
     $("#welcome-section").css("display", "none"); //Hides the welcome-section when the play button is clicked.
     $("#pre-countdown").removeClass("d-none"); //Removes the display none class so we show the pre countdown timer when play button is clicked.
     preCountdown();
   });
   keyListener();
-  $("#restartGame").on("click", function() {
+  $("#restartGame").on("click", function() { //Runs restart function when the restart button is clicked
     restart();
   });
-  $("#facebookShare").click(function() {
+  $("#facebookShare").click(function() { // Using the facebookSDK docs when the facebookShare element is clicked it passes in a quote for the shared post of what the user achieved in the game.
     FB.ui({
       method: 'share',
       href: 'https://bradleyplaydon.github.io/retro-themed-typing-test/',
@@ -112,7 +112,7 @@ function preCountdownSound(preCountdownSec) {
   }
 }
 
-function restart() {
+function restart() { //Restart function sets variables back to default and elements back to default
   words = "";
   currentSpanNo = 0;
   rowCounter = 0;
@@ -192,7 +192,7 @@ function gameCountdown() {
     }
 
     $("#gameCountdown").text(minTxt + ":" + secTxt);
-
+    // Condition to show the correct 0's when counting down.
     if (gameTimer > 9) {
       $("#gameCountdown").text("0:" + gameTimer);
     } else if (gameTimer > 0) {
@@ -211,8 +211,8 @@ function gameCountdown() {
 }
 
 function animatePreCountdown() {
-  scalePreCountdown++;
-  $("#startCountdown").css("transform", "scale(" + scalePreCountdown + ")");
+  scalePreCountdown++; //Increment variable everytime function is called
+  $("#startCountdown").css("transform", "scale(" + scalePreCountdown + ")"); //Scales the countdown every second for animation effect
 }
 
 function compareKeyTyped() {
@@ -290,7 +290,7 @@ function compareKeyTyped() {
   }
 }
 
-function results(correct, wrong){
+function results(correct, wrong){ //results function passes in 2 parameters this function displays the results and also social sharing posts
   error_wpm = Math.round(error_keystrokes / 5);
   $("#wpm").text(error_wpm + " WPM");
   $("#keystrokes").text("Keystrokes: " + error_keystrokes);
