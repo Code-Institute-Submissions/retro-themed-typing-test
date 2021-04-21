@@ -106,3 +106,20 @@
   * [Mobile Typing Game Results](/wireframes/mobile-typing-game-results.png "Mobile typing game results wireframe")
   * [Mobile Contact Page](/wireframes/contact-mobile.png "Contact page on mobile")
   * [Mobile FAQs Page](/wireframes/faqs-mobile.png "FAQs page on mobile")
+
+  ### Features
+  ---
+  #### Live Features
+  * Pre countdown timer with animation
+  * Use of random quotes [API](https://api.quotable.io/random)
+  * Validation of words typed
+  * 1 Minute Game countdown
+  * Restart game button
+  * Instructions modal
+  * FAQ accordion
+  * Font switcher for accessibility and readability
+  * Share your results functionality which copies your results to the post if the social media platform allows it.
+  * Pre countdown game sound on desktop
+  * Scroll animation when the user reaches the last word on the line
+  * Calculates Results
+  
