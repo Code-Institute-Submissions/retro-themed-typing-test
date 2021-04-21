@@ -15,6 +15,7 @@
     * Colour scheme
     * Page layout
   * Wireframes
+  * Features
 
   ## User Experience
   ---
