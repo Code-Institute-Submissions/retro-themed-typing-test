@@ -4,6 +4,12 @@ const templateID = "template_3093mur";
 const userID = "user_IZexurD0xkQkoR2UK3flk";
 
 $(document).ready(function() {
+  $("#contactFullName, #contactEmail, #contactReason, #contactMessage").on("change", function() {
+    dataT.template_params.from_name = $("#contactFullName").val();
+    dataT.template_params.from_email = $("#contactEmail").val();
+    dataT.template_params.contact_reason = $("#contactReason").val();
+    dataT.template_params.message = $("#contactMessage").val();
+  });
   // code fragment
   var dataT = {
     service_id: serivceID,
