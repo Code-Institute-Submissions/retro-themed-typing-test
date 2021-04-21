@@ -57,17 +57,17 @@
   </header>
   <div class="container mt-4">
     <h1 class="text-center">Contact</h1>
-    <form class="card mt-4 p-5">
-      <input type="name" class="form-control mb-3" placeholder="Name">
+    <form class="card mt-4 p-5" id="contact-form">
+      <input type="name" class="form-control mb-3" placeholder="Full Name" id="contact-full-name">
       <input type="email" class="form-control mb-3" placeholder="Email Address">
-      <select class="form-select mb-3">
+      <select class="form-select mb-3" id="contactReason">
         <option value="" selected disabled>Contact Reason</option>
         <option value="collab">Collaborate</option>
         <option value="bug">Bug/Glitch found</option>
         <option value="other">Other</option>
       </select>
-      <textarea name="message" placeholder="Your message" class="form-control mb-3"></textarea>
-      <button type="submit" name="button" class="btn btn-dark neonglow p-3 w-100">Submit</button>
+      <textarea name="message" placeholder="Your message" class="form-control mb-3" id="contactMessage"></textarea>
+      <button type="submit" name="button" class="btn btn-dark neonglow p-3 w-100" id="formSubmit">Submit</button>
     </form>
   </div>
   <footer class="mt-auto mx-lg-0 mx-auto">
