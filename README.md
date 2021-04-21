@@ -122,4 +122,11 @@
   * Pre countdown game sound on desktop
   * Scroll animation when the user reaches the last word on the line
   * Calculates Results
-  
+
+  #### Future Features
+  * Font colour changer for accessibility/readability
+  * Live scoreboard
+  * An afk keyboard timer
+  * Difficulty changer
+  * Timer changer
+  * Multiplayer live head to head feature
