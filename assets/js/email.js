@@ -29,6 +29,7 @@ $(document).ready(function() {
       contentType: 'application/json'
     }).done(function() {
       alert('Your mail is sent!');
+      $("#contactForm").trigger("reset");
     }).fail(function(error) {
       alert('Oops... ' + JSON.stringify(error));
     });
