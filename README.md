@@ -1,4 +1,5 @@
 # Retro Typing Game #
+![Retro typing game website](/wireframes/amiresponsivetypinggame.png "Retro typing game website")
 *A Retro themed typing game where you can practice your typing skills.*
 ---
 ## **Project contents**
@@ -104,4 +105,4 @@
   * [Mobile Typing Game During](/wireframes/mobile-typing-game-during.png "Mobile typing game during wireframe")
   * [Mobile Typing Game Results](/wireframes/mobile-typing-game-results.png "Mobile typing game results wireframe")
   * [Mobile Contact Page](/wireframes/contact-mobile.png "Contact page on mobile")
-  * [Mobile FAQs Page](/wireframes/faqs-mobile.png "FAQs page on mobile") 
+  * [Mobile FAQs Page](/wireframes/faqs-mobile.png "FAQs page on mobile")
