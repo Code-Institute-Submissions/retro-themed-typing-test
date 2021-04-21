@@ -2,10 +2,6 @@
 const serivceID = "service_veo9o7d";
 const templateID = "template_3093mur";
 const userID = "user_IZexurD0xkQkoR2UK3flk";
-var userFullName = "";
-var userEmail = "";
-var contactReason = "";
-var message = "";
 
 // code fragment
 var dataT = {
@@ -13,10 +9,10 @@ var dataT = {
     template_id: templateID,
     user_id: userID,
     template_params: {
-        'from_name': userFullName,
-        'from_email': userEmail,
-        'contact_reason': contactReason,
-        'message': message
+        'from_name': "",
+        'from_email': "",
+        'contact_reason': "",
+        'message': ""
     }
 };
 $("#contactForm").submit(function(event) {
