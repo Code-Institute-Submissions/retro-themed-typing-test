@@ -13,7 +13,10 @@ var dataT = {
     template_id: templateID,
     user_id: userID,
     template_params: {
-        'username': 'example',
+        'from_name': userFullName,
+        'from_email': userEmail,
+        'contact_reason': contactReason,
+        'message': message
     }
 };
 $("#contactForm").submit(function(event) {
