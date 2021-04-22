@@ -267,10 +267,10 @@ function compareKeyTyped() {
     currentSpan.addClass("highlight");
 
     var currentSpanPos = currentSpan.position();
-    var prevSpanPos = 0;
-
+    var prevSpan = $('#row1 span[word-number="' + (currentSpanNo - 1) + '"]');;
+    var prevSpanPos = prevSpan.position();
     // Checks span top position to check if there is a text wrap to find the next row if there is we increment rowCounter
-    if (currentSpanPos.top > prevSpanPos + 49) {
+    if (currentSpanPos.top > prevSpanPos.top) {
       rowCounter++;
       prevSpanPos = currentSpanPos.top;
       var lineHeightOfSpan = line_height * rowCounter;
