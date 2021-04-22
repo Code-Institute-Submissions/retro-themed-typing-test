@@ -261,30 +261,44 @@
 
   ## Bugs
   ---
-  #### Pre countdown sound effects
+  ### Pre countdown sound effects
 
     * **Bug**
 
-      When you pressed play only one sound effect would play one mobile.
+    When you pressed play only one sound effect would play one mobile.
 
     *  **Fix**
 
-      Disabled pre countdown sound effects on mobile devices as from researching mobiles don't allow scripts to play audio files without user interaction which is one only one sound effect would play.
+    Disabled pre countdown sound effects on mobile devices as from researching mobiles don't allow scripts to play audio files without user interaction which is one only one sound effect would play.
 
     *  **Verdict**
 
-      Sound effects play on Desktop but not on mobile.
+    Sound effects play on Desktop but not on mobile.
 
-  #### Game Countdown
+  ### Game Countdown
 
     * **Bug**
 
-      When typing the timer would glitch as the function kept being called every word press.
+    When typing the timer would glitch as the function kept being called every word press.
 
     * **Fix**
 
-      Fixed by wrapping the countdown function in a condition to stop the function from keep running using a variable called gameCountdownStarted and loading.
+    Fixed by wrapping the countdown function in a condition to stop the function from keep running using a variable called gameCountdownStarted and loading.
 
     * **Verdict**
 
-      The countdown now works as expected and counts down from 1:00 to 0.
+    The countdown now works as expected and counts down from 1:00 to 0.
+
+  ### Words scroll
+
+    * **Bug**
+
+      When typing the scroll animation would scroll and cut off words to be typed.
+
+    * **Fix**
+
+      Fixed this by creating a variable which captures the previous words top position to determine when to run scroll function.
+
+    * **Verdict**
+
+      Words box now scrolls accurately once you finish typing the last word on a line.
