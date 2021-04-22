@@ -5,7 +5,7 @@ $("#flexSwitchCheckDefault, #flexSwitchCheckDefaultMobile").change(function(){
     else {
         setRetroFont();
     }
-})
+});
 
 var rootVars = document.querySelector(':root');
 
