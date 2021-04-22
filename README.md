@@ -16,7 +16,8 @@
     * Page layout
   * Wireframes
   * Features
-
+  * Tests
+  * Bugs
   ## User Experience
   ---
   ### User Goals
@@ -257,3 +258,6 @@
   #### General testing
 
     When testing functionality and fixing bugs I did my best to write down tests I performed, the expected results and actual results in a google sheet this can be viewed [here.](https://docs.google.com/spreadsheets/d/1oRHwHCrk8LQ9ojLkiROrc9csJuyNwP3HiEUcy2xHKQ0/edit?usp=sharing)
+
+  ### Bugs
+  ---
