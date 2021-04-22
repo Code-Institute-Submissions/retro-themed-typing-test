@@ -274,7 +274,6 @@ function compareKeyTyped() {
       rowCounter++;
       prevSpanPos = currentSpanPos.top;
       var lineHeightOfSpan = line_height * rowCounter;
-      //var scrollDown = (rowCounter == 1) ? ($('#words').outerHeight() / 2) : (($('#words').outerHeight() / 2) * rowCounter) + 10;
       $('#words').animate({
         scrollTop: lineHeightOfSpan
       }, 500);
