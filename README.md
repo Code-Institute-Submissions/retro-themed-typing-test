@@ -266,10 +266,23 @@
 
       When you pressed play only one sound effect would play one mobile.
 
-      **Fix**
+    *  **Fix**
 
       Disabled pre countdown sound effects on mobile devices as from researching mobiles don't allow scripts to play audio files without user interaction which is one only one sound effect would play.
 
-      **Verdict**
+    *  **Verdict**
 
       Sound effects play on Desktop but not on mobile.
+
+  #### Game Countdown bugs
+    * **Bug**
+
+      When typing the timer would glitch as the function kept being called every word press.
+
+    * **Fix**
+
+      Fixed by wrapping the countdown function in a condition to stop the function from keep running using a variable called "gameCountdownStarted" and "loading".
+
+    * **Verdict**
+
+      The countdown now works as expected and counts down from 1:00 to 0.
