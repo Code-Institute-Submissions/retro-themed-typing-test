@@ -302,3 +302,29 @@
     * **Verdict**
 
       Words box now scrolls accurately once you finish typing the last word on a line.
+
+  ## Deployment
+  ---
+  Retro Typing Game was developed on [Atom](https://atom.io/), using git, git client and GitHub to host the repository.
+
+  When deploying Retro Typing Game with GitHub Pages I did the following:
+
+  1. Opened up [GitHub](https://github.com/) in the browser.
+  2. Signed in using username and password.
+  3.   Selected my repositories.
+  4. Navigated to [bradleyplaydon/retro-themed-typing-test](https://github.com/bradleyplaydon/retro-themed-typing-test).
+  5. Navigated to the **Settings** link on the link ribbon at the top.
+  6. I then navigated to the **Pages** link on the left below **Secrets** and above **Moderation settings**.
+  7. Selected Master Branch from the Source dropdown menu.
+  8. Clicked to confirm my selection.
+  9. Now the project is live on GitHub Pages.
+
+  ### To run the game locally
+  Clone Retro Typing Game by:
+
+  1. Navigate to [bradleyplaydon/retro-themed-typing-test](https://github.com/bradleyplaydon/retro-themed-typing-test).
+  1. Click the button which says *Code* with a dropdown icon.
+  2. Copy the URL which is shown.
+  3. Navigate to your desired file location in file explorer and click in the address bar and type and enter cmd (Windows) OR if on MacOS open a terminal prompt and navigate with git commands to your desired file location.
+  4. Copy the following code git clone https://github.com/bradleyplaydon/retro-themed-typing-test.git
+  6. Input it into your terminal to clone [bradleyplaydon/retro-themed-typing-test](https://github.com/bradleyplaydon/retro-themed-typing-test)
