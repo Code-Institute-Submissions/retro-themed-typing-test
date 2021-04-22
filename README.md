@@ -20,7 +20,7 @@
   * Bugs
   ## User Experience
   ---
-  ### User Goals
+  ## User Goals
   ---
   * The typing game and website to be responsive on as many possible devices such as Laptops, Tablets, Mobile Phones and PCs.
   * The ability to chose the difficulty of the test for example easy only includes 4 letter words and hard includes longer words.
@@ -31,7 +31,7 @@
   * To have instructions to clearly indicate how to play the game.
   * Have a clear indication that the test has started.
 
-  ### User Stories
+  ## User Stories
   ---
   * As the **user** I want clear feedback when the word was typed correctly and incorrectly.
   * As the **user** I would like to be able to chose the difficult of the test.
@@ -45,16 +45,16 @@
   * As the **user** I would want to see a rule book/instructions.
   * As the **user** I would maybe want to be able to change the font colour to make it easier to read for the colour blind.
 
-  ### Site Owners Goals
+  ## Site Owners Goals
   ---
   * As the **Site owner** I want users to have fun, interaction and intuitive experience.
   * As the **Site owner** I want users to be able to test there typing skills.
   * As the **Site owner** I want it to be able to improve typing skills.
   * As the **Site owner** I want the website to look appealing and eye capturing.
 
-  ### User Requirements and Expectations
+  ## User Requirements and Expectations
   ---
-  #### Requirements
+  ### Requirements
   * Clear way to start the typing test.
   * Be responsive across different devices.
   * To be able to contact and be connected in case of there being a bug found.
@@ -62,7 +62,7 @@
   * To be able to reset the test.
   * To be able to share the results.
 
-  #### Expectations
+  ### Expectations
   * Clear indication of words typed correctly and incorrectly
   * Expect it to work on all devices.
   * Website to load quickly.
@@ -71,19 +71,19 @@
   * Countdown timer to work correctly
   * Game starts correctly
 
-  ### Design Choices and Thoughts
+  ## Design Choices and Thoughts
   ---
-  #### Fonts
+  ### Fonts
   When deciding and choosing the font that I will use for the site I took the theme and idea I had in mind being retro and took inspiration from some font styles that was used in that 80s I have decided I will use a font which is an open source font called [Glass TTY VT](https://github.com/svofski/glasstty) I think this provides a retro theme and doesn't harm readability too much. If readability of text is an issue I plan to create a readability/accessibility switch so text can be transformed into an easier to read font.
 
-  #### Colours
+  ### Colours
   To decide and chose which colours would suit my project I decided to use some inspiration from New York in the 80s at night where there was lots of vibrant colours and glowing accents I will try to create this theme throughout the website. To replicate the night feeling the website background will be dark using #131517 with a hint of #5C0000. To replicate vibrant glowing effects I will use text shadows and box shadows for glowing text throughout the site I will use colour #FF8585 with text shadow of #FF4D4D and #FB0000. Here are my colour choices:
   ![Retro Typing Game Colour Scheme](/wireframes/retro-typing-game-theme.png "Retro Typing Game Colours")
 
-  #### Page layout
+  ### Page layout
   For my project I think I will go with a condensed layout inside containers I will use [Bootstrap](www.bootstrap.com "Bootstrap responsive framework") and the grid system to make the website responsive across devices as-well as using the short hand flexbox classes [Bootstrap](www.bootstrap.com "Bootstrap responsive framework") offers.
 
-  ### Wireframes
+  ## Wireframes
   ---
   For building the Wireframes I have used [Balsamiq Wireframes](https://balsamiq.com/) as it allows for easy website Wireframes to be created and to show simply how I want the project to look on Desktop/Tablet and mobile.
 
@@ -109,9 +109,9 @@
   * [Mobile Contact Page](/wireframes/contact-mobile.png "Contact page on mobile")
   * [Mobile FAQs Page](/wireframes/faqs-mobile.png "FAQs page on mobile")
 
-  ### Features
+  ## Features
   ---
-  #### Live Features
+  ### Live Features
   * Pre countdown timer with animation
   * Use of random quotes [API](https://api.quotable.io/random)
   * Validation of words typed
@@ -133,20 +133,20 @@
   * Timer changer
   * Multiplayer live head to head feature
 
-  ### Technologies used
+  ## Technologies used
   ---
-  #### Coding languages
+  ### Coding languages
   * HTML
   * CSS
   * JavaScript, jQuery
 
-  #### Coding library's / dependencies
+  ### Coding library's / dependencies
   * Bootstrap
   * jQuery
   * Font Awesome
   * Facebook Software Development Kit (SDK)
 
-  #### Tools & Applications
+  ### Tools & Applications
   * Git (History/Versioning)
   * Atom (Code editing)
   * Beautify package (Code formatting)
@@ -157,9 +157,9 @@
   * W3C CSS Validator
   * emailJS for contact form
 
-  ### Testing
+  ## Testing
   ---
-  #### Correct/Wrong word typed indication
+  ### Correct/Wrong word typed indication
 
   User Story - As the user I want clear feedback when the word was typed correctly and incorrectly.
 
@@ -180,7 +180,7 @@
 
     It is now clearly indicated whether the word has been typed wrong or correct.
 
-  #### Readability
+  ### Readability
 
   User Story - As the **user** I would like the words to be easy to read.
 
@@ -203,7 +203,7 @@
 
     This can be improved by using cookies to remember switch state as currently every page refresh the state of the switch is not remembered by the browser therefore needing to be pressed every time you refresh the page.
 
-  #### Restarting the game
+  ### Restarting the game
 
     User Story - As the **user** I would want to be able to restart the test in-case of a making a mistake.
 
@@ -227,7 +227,7 @@
 
       This can be improved by only allowing the restart button to be clicked every so often as currently you can keep clicking the restart button which can end up with too many API calls causing problems.
 
-  #### Sharing user results
+  ### Sharing user results
 
     As the **user** I would like to be able to share my words per minute on Social media.
 
@@ -259,7 +259,7 @@
 
     When testing functionality and fixing bugs I did my best to write down tests I performed, the expected results and actual results in a google sheet this can be viewed [here.](https://docs.google.com/spreadsheets/d/1oRHwHCrk8LQ9ojLkiROrc9csJuyNwP3HiEUcy2xHKQ0/edit?usp=sharing)
 
-  ### Bugs
+  ## Bugs
   ---
   #### Pre countdown sound effects
 
