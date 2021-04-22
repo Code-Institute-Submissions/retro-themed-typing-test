@@ -4,6 +4,7 @@ var typingInput = $("#typingInput"); // Input element
 var preInputVal = ""; // Is set to the value before next word
 var inputVal = ""; // Is set to user input value
 
+var gameCountdownStarted = 0;
 var gameCountdownTimer = "";
 var currentSpanNo = 0;
 var correctCounter = 0;
@@ -163,7 +164,7 @@ function restart() { //Restart function sets variables back to default and eleme
     $("#row1").html(sentences);
     $("#row1 span:first").addClass("highlight");
   }
-  renderSentence()
+  renderSentence();
 }
 
 function keyListener() {
@@ -228,7 +229,7 @@ function compareKeyTyped() {
     inputVal = typingInput.val();
   }
 
-  currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
+  var currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
 
   // if the delete key is pressed
   var keyid = event.which;
@@ -261,7 +262,7 @@ function compareKeyTyped() {
     //Next span
     currentSpanNo++;
     currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
-    line_height = parseInt($('#row1 span[word-number="' + currentSpanNo + '"]').css("line-height"));
+    var line_height = parseInt($('#row1 span[word-number="' + currentSpanNo + '"]').css("line-height"));
     currentSpan.addClass("highlight");
 
     var currentSpanPos = currentSpan.position();
@@ -289,7 +290,7 @@ function compareKeyTyped() {
 }
 
 function results(correct, wrong){ //results function passes in 2 parameters this function displays the results and also social sharing posts
-  error_wpm = Math.round(error_keystrokes / 5);
+  var error_wpm = Math.round(error_keystrokes / 5);
   $("#wpm").text(error_wpm + " WPM");
   $("#keystrokes").text("Keystrokes: " + error_keystrokes);
   $("#correct").text(correct);
