@@ -261,3 +261,15 @@
 
   ### Bugs
   ---
+  #### Pre countdown sound effects
+    * **Bug**
+
+      When you pressed play only one sound effect would play one mobile.
+
+      **Fix**
+
+      Disabled pre countdown sound effects on mobile devices as from researching mobiles don't allow scripts to play audio files without user interaction which is one only one sound effect would play.
+
+      **Verdict**
+
+      Sound effects play on Desktop but not on mobile.
