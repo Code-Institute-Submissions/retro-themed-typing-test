@@ -57,11 +57,11 @@ function preCountdown() {
         preCountdownSound($(this).text());
         setTimeout(function() {
           $("#pre-countdown").parent().addClass("d-none");
-        }, 1000)
+        }, 1000);
         setTimeout(function() {
           $("#typing-game").removeClass("d-none");
           typingInput.focus();
-        }, 1000)
+        }, 1000);
         return;
       }
     });
@@ -138,7 +138,7 @@ function restart() { //Restart function sets variables back to default and eleme
   function getRandomSentence() {
     return fetch(RANDOM_SENTENCE_API_URL)
       .then(response => response.json())
-      .then(data => data.content)
+      .then(data => data.content);
   }
 
   async function renderSentence() {
@@ -152,7 +152,7 @@ function restart() { //Restart function sets variables back to default and eleme
     do {
       sentence += await getRandomSentence() + " ";
       noOfSetences = sentence.split(' ').length;
-    } while (noOfSetences < 250)
+    } while (noOfSetences < 250);
     $("#spinner").remove();
     $("#row1").show("fast");
 
@@ -173,7 +173,7 @@ function keyListener() {
       gameCountdown();
     }
     compareKeyTyped();
-  })
+  });
 }
 
 function gameCountdown() {
@@ -207,7 +207,7 @@ function gameCountdown() {
       $(".words-card").hide();
       results(correctCounter, wrongCounter);
     }
-  }, 1000)
+  }, 1000);
 }
 }
 
@@ -237,7 +237,7 @@ function compareKeyTyped() {
       correctCounter += preInputVal.length - inputVal.length;
       break;
     case delKey:
-      correctCounter += preInputVal.length - inputVal.length;;
+      correctCounter += preInputVal.length - inputVal.length;
       break;
     default:
       break;
@@ -246,7 +246,7 @@ function compareKeyTyped() {
   if (event.which == spaceKey && typingInput.val() == " ") {
     typingInput.val("");
   } else if (event.which == spaceKey && loading == 0) {
-    currentSpan.removeClass("incorrect")
+    currentSpan.removeClass("incorrect");
     var typedValues = typingInput.val().split(" "); // User entered values array
     if (typedValues[0] == words[currentSpanNo]) {
       currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
@@ -261,13 +261,11 @@ function compareKeyTyped() {
     //Next span
     currentSpanNo++;
     currentSpan = $('#row1 span[word-number="' + currentSpanNo + '"]');
-    line_height = parseInt(
-      $('#row1 span[word-number="' + currentSpanNo + '"]').css("line-height")
-      );
+    line_height = parseInt($('#row1 span[word-number="' + currentSpanNo + '"]').css("line-height"));
     currentSpan.addClass("highlight");
 
     var currentSpanPos = currentSpan.position();
-    var prevSpan = $('#row1 span[word-number="' + (currentSpanNo - 1) + '"]');;
+    var prevSpan = $('#row1 span[word-number="' + (currentSpanNo - 1) + '"]');
     var prevSpanPos = prevSpan.position();
     // Checks span top position to check if there is a text wrap to find the next row if there is we increment rowCounter
     if (currentSpanPos.top > prevSpanPos.top) {
@@ -297,7 +295,7 @@ function results(correct, wrong){ //results function passes in 2 parameters this
   $("#correct").text(correct);
   $("#wrong").text(wrong);
   $("#twitterShare").attr("href", 'https://twitter.com/intent/tweet?hashtags=retrotypingchallenge%20&ref_src=twsrc%5Etfw&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!&tw_p=tweetbutton&url=https://bradleyplaydon.github.io/retro-themed-typing-test/');
-  $("#telegramShare").attr("href", 'https://t.me/share/url?url=https://bradleyplaydon.github.io/retro-themed-typing-test/&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!')
+  $("#telegramShare").attr("href", 'https://t.me/share/url?url=https://bradleyplaydon.github.io/retro-themed-typing-test/&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!');
   $("#results").removeClass("d-none");
   $("#results").show();
 }
