@@ -18,6 +18,8 @@
   * Features
   * Tests
   * Bugs
+  * Deployment
+
   ## User Experience
   ---
   ## User Goals
@@ -141,21 +143,25 @@
   * JavaScript, jQuery
 
   ### Coding library's / dependencies
-  * Bootstrap
-  * jQuery
-  * Font Awesome
-  * Facebook Software Development Kit (SDK)
+  * [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  * [jQuery](https://jquery.com/)
+  * [Font Awesome](https://fontawesome.com/)
+  * [Facebook Software Development Kit](https://developers.facebook.com/docs/apis-and-sdks/) (SDK)
 
   ### Tools & Applications
   * Git (History/Versioning)
-  * Atom (Code editing)
-  * Beautify package (Code formatting)
-  * Balsamiq (Wireframes)
+  * [Atom](https://atom.io) (Code editing)
+  * [Beautify package](https://github.com/Glavin001/atom-beautify) (Code formatting)
+  * [Balsamiq Wireframes](https://balsamiq.com/)
   * Chrome Dev Tools (Mobile responsiveness, Console error fixing, bug testing)
-  * Google Sheets for writing tests and expected results and fixes
-  * W3 HTML Validator
-  * W3C CSS Validator
-  * emailJS for contact form
+  * [Google Sheets](https://www.google.co.uk/sheets/about/) for writing tests and expected results and fixes
+  * [W3 HTML Validator](https://validator.w3.org/)
+  * [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+  * [JS Validator](https://jshint.com/)
+  * [emailJS](https://www.emailjs.com/) for contact form
+  * [Box shadow generator](https://html-css-js.com/css/generator/box-shadow/)
+  * [Font converter](https://transfonter.org/)
+  * [Stack overflow](https://stackoverflow.com/)
 
   ## Testing
   ---
@@ -263,43 +269,43 @@
   ---
   ### Pre countdown sound effects
 
-    * **Bug**
+  * **Bug**
 
     When you pressed play only one sound effect would play one mobile.
 
-    *  **Fix**
+  *  **Fix**
 
     Disabled pre countdown sound effects on mobile devices as from researching mobiles don't allow scripts to play audio files without user interaction which is one only one sound effect would play.
 
-    *  **Verdict**
+  *  **Verdict**
 
     Sound effects play on Desktop but not on mobile.
 
   ### Game Countdown
 
-    * **Bug**
+  * **Bug**
 
     When typing the timer would glitch as the function kept being called every word press.
 
-    * **Fix**
+  * **Fix**
 
     Fixed by wrapping the countdown function in a condition to stop the function from keep running using a variable called gameCountdownStarted and loading.
 
-    * **Verdict**
+  * **Verdict**
 
     The countdown now works as expected and counts down from 1:00 to 0.
 
   ### Words scroll
 
-    * **Bug**
+  * **Bug**
 
       When typing the scroll animation would scroll and cut off words to be typed.
 
-    * **Fix**
+  * **Fix**
 
       Fixed this by creating a variable which captures the previous words top position to determine when to run scroll function.
 
-    * **Verdict**
+  * **Verdict**
 
       Words box now scrolls accurately once you finish typing the last word on a line.
 
