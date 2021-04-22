@@ -262,6 +262,7 @@
   ### Bugs
   ---
   #### Pre countdown sound effects
+
     * **Bug**
 
       When you pressed play only one sound effect would play one mobile.
@@ -274,14 +275,15 @@
 
       Sound effects play on Desktop but not on mobile.
 
-  #### Game Countdown bugs
+  #### Game Countdown
+
     * **Bug**
 
       When typing the timer would glitch as the function kept being called every word press.
 
     * **Fix**
 
-      Fixed by wrapping the countdown function in a condition to stop the function from keep running using a variable called "gameCountdownStarted" and "loading".
+      Fixed by wrapping the countdown function in a condition to stop the function from keep running using a variable called gameCountdownStarted and loading.
 
     * **Verdict**
 
