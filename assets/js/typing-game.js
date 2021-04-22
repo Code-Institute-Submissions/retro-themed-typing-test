@@ -126,6 +126,7 @@ function restart() { //Restart function sets variables back to default and eleme
 
   typingInput.removeAttr("disabled");
   typingInput.val("");
+  typingInput.focus();
   $("#results").hide();
   $("#gameCountdown").show();
   $(".words-card").show();
