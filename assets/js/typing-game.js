@@ -251,12 +251,12 @@ function compareKeyTyped() {
     if (typedValues[0] == words[currentSpanNo]) {
       currentSpan.removeClass("highlight").addClass("correct"); // If the first word the user types matches the first span add class
       correctCounter++;
-      error_keystrokes += words[currentSpanNo].length;
+      error_keystrokes += words[currentSpanNo].length; //Adds the character length of the current word thats highlighted to error_keystrokes
       error_keystrokes++;
     } else {
       currentSpan.removeClass("highlight").addClass("incorrect");
       wrongCounter++;
-      error_keystrokes -= Math.round(words[currentSpanNo].length / 2);
+      error_keystrokes -= Math.round(words[currentSpanNo].length / 2); // If the word typed is incorrect deduct the character length from error_keystrokes
     }
     //Next span
     currentSpanNo++;
