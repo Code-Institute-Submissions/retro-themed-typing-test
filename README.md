@@ -225,3 +225,31 @@
     * **Verdict**
 
       This can be improved by only allowing the restart button to be clicked every so often as currently you can keep clicking the restart button which can end up with too many API calls causing problems.
+
+  #### Sharing user results
+
+    As the **user** I would like to be able to share my words per minute on Social media.
+
+    * **Plan**
+
+      When the user finishes the game and the timer is up to display results of what the user achieved and provide options for them results to be shared through buttons on social media platforms.
+
+    * **Implementation**
+
+      By storing results of the user in variables which are passed into a function that shows a box with buttons that have event listeners which trigger share popups.
+
+    * **Tested**
+
+      When testing this there was a few issues with some social media platforms as LinkedIn doesn't allow you to pass a message to a shared post without having access to there development API which requires business page.
+
+      I compromised and just allowed the button to open a LinkedIn share window.
+
+      The other social media buttons work and copy in your results with a message to the post.
+
+    * **Result**
+
+      When you complete the game a box shows with your results and also the option to share your results.
+
+    * **Verdict**
+
+      Overall I think it works well however the LinkedIn share could be improved if it was possible to get access to the development API.
