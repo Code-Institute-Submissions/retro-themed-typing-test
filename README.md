@@ -20,7 +20,7 @@
   * [Bugs](#bugs)
   * [Deployment](#deployment)
   * [Credits](#credits)
-  * [Final Note](#final-none)
+  * [Final Note](#final-note)
 
   ## User Experience
   ---
