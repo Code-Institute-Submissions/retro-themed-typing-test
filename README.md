@@ -20,7 +20,7 @@
   * [Bugs](#bugs)
   * [Deployment](#deployment)
   * [Credits](#credits)
-
+  * [Final Note](#final-none)
 
   ## User Experience
   ---
@@ -342,3 +342,7 @@
   * For building the random words section I couldn't really think of a way of incorporating random words other than building my own large JSON but this would have been a big tasks considering how many words there are thanks to my mentor [Simen](https://github.com/Eventyret) he pointed me to a Youtube channel: https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw this really helped me pick which API I used for the words.
 
   * I would also like to thank the creators of the font which I used [Glass TTY VT220](https://github.com/svofski/glasstty) this really allowed me to give a retro feel to the project.
+
+  ## Final note
+
+  * This project really pushed what I can do with JavaScript and really enjoyed building out the functionality this is a project I would love to continue to develop and Collaborate on to improve it. Lots of research, time and effort went into building this and I am proud of where I got it too but there is still more I would love to implement in the future.
