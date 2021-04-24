@@ -4,21 +4,21 @@
 ---
 ## **Project contents**
 * User Experience
-  * User Goals
-  * User Stories
-  * Site Owner Goals
-  * User Requirements and Expectations
-    * Requirements
-    * Expectations
-  * Design Choices and Thoughts
-    * Fonts
-    * Colour scheme
-    * Page layout
-  * Wireframes
-  * Features
-  * Tests
-  * Bugs
-  * Deployment
+  * [User Goals](#user-experience)
+  * [User Stories](#user-stories)
+  * [Site Owner Goals](#site-owners-goals)
+  * [User Requirements and Expectations](#user-requirements-and-expectations)
+    * [Requirements](#requirements)
+    * [Expectations](#expectations)
+  * [Design Choices and Thoughts](#design-choices-and-thoughts)
+    * [Fonts](#fonts)
+    * [Colour scheme](#colours)
+    * [Page layout](#page-layout)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+  * [Tests](#testing)
+  * [Bugs](#bugs)
+  * [Deployment](#deployment)
 
   ## User Experience
   ---
