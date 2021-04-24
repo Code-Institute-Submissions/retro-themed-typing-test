@@ -16,12 +16,12 @@ var loading = 0;
 var scalePreCountdown = 1;
 
 var currentScrollPosition = 0;
-$(document).scroll(function(){
-    currentScrollPosition = $(this).scrollTop();
+$(document).scroll(function() {
+  currentScrollPosition = $(this).scrollTop();
 });
 
-$(typingInput).focus(function(){
-    $(document).scrollTop(currentScrollPosition);
+$(typingInput).focus(function() {
+  $(document).scrollTop(currentScrollPosition);
 });
 
 $(document).ready(function() {
@@ -82,33 +82,33 @@ function preCountdownSound(preCountdownSec) {
 
   if (preCountdownSec == 3) {
     animatePreCountdown();
-    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
-    $("body").append(audio3);
-    document.getElementById("audio3").play();
+    if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))) {
+      $("body").append(audio3);
+      document.getElementById("audio3").play();
     }
   }
 
   if (preCountdownSec == 2) {
     animatePreCountdown();
-    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
-    $("body").append(audio2);
-    document.getElementById("audio2").play();
+    if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))) {
+      $("body").append(audio2);
+      document.getElementById("audio2").play();
     }
   }
 
   if (preCountdownSec == 1) {
     animatePreCountdown();
-    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
-    $("body").append(audio1);
-    document.getElementById("audio1").play();
+    if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))) {
+      $("body").append(audio1);
+      document.getElementById("audio1").play();
     }
   }
 
   if (preCountdownSec == "GO!") {
     animatePreCountdown();
-    if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))){
-    $("body").append(audioGo);
-    document.getElementById("audioGo").play();
+    if (!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent))) {
+      $("body").append(audioGo);
+      document.getElementById("audioGo").play();
     }
   }
 }
@@ -118,7 +118,9 @@ function restart() { //Restart function sets variables back to default and eleme
   currentSpanNo = 0;
   rowCounter = 0;
   scalePreCountdown = 1;
-  $('#words').animate({scrollTop:0},200);
+  $('#words').animate({
+    scrollTop: 0
+  }, 200);
 
   $("#gameCountdown").text("1:00");
   gameCountdownStarted = 0;
@@ -170,7 +172,7 @@ function restart() { //Restart function sets variables back to default and eleme
 function keyListener() {
   //On key release in typing input field
   typingInput.keyup(function(event) {
-    if(loading == 0){
+    if (loading == 0) {
       gameCountdown();
     }
     compareKeyTyped();
@@ -179,37 +181,37 @@ function keyListener() {
 
 function gameCountdown() {
   var gameTimer = 60;
-  if(gameCountdownStarted == 0){
+  if (gameCountdownStarted == 0) {
     gameCountdownStarted = 1;
     gameCountdownTimer = window.setInterval(function() {
-    gameTimer--;
-    var minTxt;
-    var secTxt;
+      gameTimer--;
+      var minTxt;
+      var secTxt;
 
-    minTxt = Math.floor(gameTimer / 60); //Returns 0 if gameTimer is < 60
-    secTxt = gameTimer % 60; //Returns seconds
+      minTxt = Math.floor(gameTimer / 60); //Returns 0 if gameTimer is < 60
+      secTxt = gameTimer % 60; //Returns seconds
 
-    if (secTxt < 10) {
-      secTxt = "0" + secTxt;
-    }
+      if (secTxt < 10) {
+        secTxt = "0" + secTxt;
+      }
 
-    $("#gameCountdown").text(minTxt + ":" + secTxt);
-    // Condition to show the correct 0's when counting down.
-    if (gameTimer > 9) {
-      $("#gameCountdown").text("0:" + gameTimer);
-    } else if (gameTimer > 0) {
-      $("#gameCountdown").text("0:0" + gameTimer);
-    } else {
-      $("#gameCountdown").text("0:00");
-      window.clearInterval(gameCountdownTimer);
-      gameCountdownTimer = "";
-      typingInput.attr("disabled", "");
-      $("#gameCountdown").hide();
-      $(".words-card").hide();
-      results(correctCounter, wrongCounter);
-    }
-  }, 1000);
-}
+      $("#gameCountdown").text(minTxt + ":" + secTxt);
+      // Condition to show the correct 0's when counting down.
+      if (gameTimer > 9) {
+        $("#gameCountdown").text("0:" + gameTimer);
+      } else if (gameTimer > 0) {
+        $("#gameCountdown").text("0:0" + gameTimer);
+      } else {
+        $("#gameCountdown").text("0:00");
+        window.clearInterval(gameCountdownTimer);
+        gameCountdownTimer = "";
+        typingInput.attr("disabled", "");
+        $("#gameCountdown").hide();
+        $(".words-card").hide();
+        results(correctCounter, wrongCounter);
+      }
+    }, 1000);
+  }
 }
 
 function animatePreCountdown() {
@@ -289,14 +291,14 @@ function compareKeyTyped() {
   }
 }
 
-function results(correct, wrong){ //results function passes in 2 parameters this function displays the results and also social sharing posts
+function results(correct, wrong) { //results function passes in 2 parameters this function displays the results and also social sharing posts
   var error_wpm = Math.round(error_keystrokes / 5);
   $("#wpm").text(error_wpm + " WPM");
   $("#keystrokes").text("Keystrokes: " + error_keystrokes);
   $("#correct").text(correct);
   $("#wrong").text(wrong);
-  $("#twitterShare").attr("href", 'https://twitter.com/intent/tweet?hashtags=retrotypingchallenge%20&ref_src=twsrc%5Etfw&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!&tw_p=tweetbutton&url=https://bradleyplaydon.github.io/retro-themed-typing-test/');
-  $("#telegramShare").attr("href", 'https://t.me/share/url?url=https://bradleyplaydon.github.io/retro-themed-typing-test/&text='+ 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!');
+  $("#twitterShare").attr("href", 'https://twitter.com/intent/tweet?hashtags=retrotypingchallenge%20&ref_src=twsrc%5Etfw&text=' + 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!&tw_p=tweetbutton&url=https://bradleyplaydon.github.io/retro-themed-typing-test/');
+  $("#telegramShare").attr("href", 'https://t.me/share/url?url=https://bradleyplaydon.github.io/retro-themed-typing-test/&text=' + 'I just got ' + correctCounter + ' words correct on this retro typing game give it a go!');
   $("#results").removeClass("d-none");
   $("#results").show();
 }

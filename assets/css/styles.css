@@ -79,7 +79,7 @@ div .words {
   line-height: 1.6em;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   div .words {
     height: 130px;
   }
@@ -139,9 +139,9 @@ div#results {
 }
 
 .form-check-input:focus {
-    border-color: var(--neon-red-color-1) !important;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 25%) !important;
+  border-color: var(--neon-red-color-1) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(253 13 13 / 25%) !important;
 }
 
 .form-switch .form-check-input:checked {
