@@ -19,6 +19,8 @@
   * [Tests](#testing)
   * [Bugs](#bugs)
   * [Deployment](#deployment)
+  * [Credits](#credits)
+
 
   ## User Experience
   ---
@@ -334,3 +336,9 @@
   3. Navigate to your desired file location in file explorer and click in the address bar and type and enter cmd (Windows) OR if on MacOS open a terminal prompt and navigate with git commands to your desired file location.
   4. Copy the following code git clone https://github.com/bradleyplaydon/retro-themed-typing-test.git
   6. Input it into your terminal to clone [bradleyplaydon/retro-themed-typing-test](https://github.com/bradleyplaydon/retro-themed-typing-test)
+
+  ## Credits
+
+  * For building the random words section I couldn't really think of a way of incorporating random words other than building my own large JSON but this would have been a big tasks considering how many words there are thanks to my mentor [Simen](https://github.com/Eventyret) he pointed me to a Youtube channel: https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw this really helped me pick which API I used for the words.
+
+  * I would also like to thank the creators of the font which I used [Glass TTY VT220](https://github.com/svofski/glasstty) this really allowed me to give a retro feel to the project.
